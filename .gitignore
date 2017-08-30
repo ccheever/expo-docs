@@ -60,3 +60,5 @@ typings/
 # build output
 .next
 out
+
+.DS_Store
