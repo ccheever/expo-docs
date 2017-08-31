@@ -42,11 +42,13 @@ export const InlineCode = ({ children, noWrap }) => (
       }
 
       code::before {
-        content: '\`';
+        content: '';
+        /* content: '\`'; */
       }
 
       code::after {
-        content: '\`';
+        /* content: '\`'; */
+        content: '';
       }
     `}
     </style>
