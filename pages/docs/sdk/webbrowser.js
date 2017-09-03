@@ -11,6 +11,8 @@ import { InlineCode } from '../../../components/text/code'
 //   TerminalOutput
 // } from "../../../components/text/terminal";
 
+import SnackEmbed from '../../../components/snack-embed'
+
 // prettier-ignore
 export default withDoc({
   title: 'WebBrowser',
@@ -20,7 +22,8 @@ export default withDoc({
 
 Provides access to the system's web browser and supports handling redirects. On iOS, it uses \`SFSafariViewController\` to provide a secure Safari browser modal that shares cookies with the Safari app, and on Android it uses \`ChromeCustomTabs\` for the same reason.
 
-${"![sketch](r116LYJne)"}
+${<SnackEmbed snackId="r116LYJne" />}
+
 <br />
 
 #### Authentication
