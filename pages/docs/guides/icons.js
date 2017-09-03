@@ -28,9 +28,8 @@ This library is installed by default on the template project that you create thr
 ${
     <Image
       src={`${ASSETS_URL}/docs/guides/vector-icons-directory.png`}
-      width={2224}
-      height={1532}
-      caption="XDE sign in screen"
+      width={1200}
+      height={756}
     />
   }
 
