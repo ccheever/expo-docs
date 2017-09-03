@@ -5,7 +5,7 @@ import { ccheever } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
-import { Code } from '../../../components/text/code'
+import { Code, InlineCode } from '../../../components/text/code'
 // import {
 //   TerminalInput,
 //   TerminalOutput
@@ -170,14 +170,9 @@ _handleUrl = (url) => {
 }
 `}</Code>}
 
-If you opened a URL like
-${<Code>{`
-\${Constants.linkingUri}?hello=world&goodbye=now
-`}</Code>},
+If you opened a URL like ${<InlineCode>{"${Constants.linkingUri}?hello=world&goodbye=now"}</InlineCode>}, this would alert ${<InlineCode>{"{hello: 'world', goodbye: 'now'}"}</InlineCode>}.
 
 
-`);
-/*
 
 ### Example: linking back to your app from WebBrowser
 
@@ -202,4 +197,3 @@ The main problem is that if the user does not have your app installed and follow
 Additionally, many messaging apps do not autolink URLs with custom schemes -- for example, \`exp://exp.host/@community/native-component-list\` might just show up as plain text in your browser rather than as a link ([exp://exp.host/@community/native-component-list](exp://exp.host/@community/native-component-list)).
 
 `)
-*/
