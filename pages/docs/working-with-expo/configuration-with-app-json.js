@@ -101,7 +101,7 @@ The following is a list of properties that are available for you under the \`"ex
    - \`androidCollapsedTitle\`
 
       If \`androidMode\` is set to \`collapse\`, this title is used for the collapsed notification message. eg: \`'#\{'{unread_notifications}'} new interactions'\`.
-  
+
 
 - \`loading\`
 
@@ -194,16 +194,16 @@ The following is a list of properties that are available for you under the \`"ex
 
 - \`rnCliPath\`
 
-   
+
 - \`packagerOpts\`
 
-   
+
 - \`ignoreNodeModulesValidation\`
 
-   
+
 - \`nodeModulesPath\`
 
-   
+
 - \`ios\`
 
    **Standalone Apps Only**. iOS standalone app specific configuration
@@ -227,7 +227,7 @@ The following is a list of properties that are available for you under the \`"ex
 
    - \`config\`
 
-      
+
        - \`branch\`
 
           [Branch](https://branch.io/) key to hook up Branch linking services.
@@ -292,9 +292,9 @@ The following is a list of properties that are available for you under the \`"ex
    - \`permissions\`
 
       List of permissions used by the standalone app. Remove the field to use the default list of permissions.
-    
+
     Example: \`[ "CAMERA", "ACCESS_FINE_LOCATION" ]\`.
-    
+
     You can specify the following permissions depending on what you need:
 
     ${<Code>{`
@@ -327,7 +327,7 @@ The following is a list of properties that are available for you under the \`"ex
 
    - \`config\`
 
-      
+
        - \`branch\`
 
           [Branch](https://branch.io/) key to hook up Branch linking services.
@@ -378,5 +378,5 @@ The following is a list of properties that are available for you under the \`"ex
 
    - \`postPublish\`
 
-      
+
 `)
