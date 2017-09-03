@@ -14,7 +14,7 @@ import { Code } from '../../../components/text/code'
 
 // prettier-ignore
 export default withDoc({
-  title: 'Svg',
+  title: 'ScreenOrientation',
   date: '30 Aug 2017',
   authors: [ccheever],
 })(markdown(components)`
