@@ -1,6 +1,24 @@
 import React from 'react'
 
 export default class SnackEmbed extends React.Component {
+  componentDidMount() {
+    var script = document.getElementById('snack')
+    if (!script) {
+      script = document.createElement('script')
+      script.src = 'https://snack.expo.io/embed.js'
+      script.async = true
+      script.id = 'snack'
+
+      document.body.appendChild(script)
+      script.addEventListener('load', () => {
+        window.ExpoSnack.initialize()
+      })
+    }
+    if (window.ExpoSnack) {
+      window.ExpoSnack.initialize()
+    }
+  }
+
   render() {
     return (
       <div
@@ -18,9 +36,7 @@ export default class SnackEmbed extends React.Component {
           borderRadius: 4,
           borderColor: 'rgba(0,0,0,.16)'
         }}
-      >
-        <script async src="https://snack.expo.io/embed.js" />
-      </div>
+      />
     )
   }
 }
