@@ -20,8 +20,7 @@ export default withDoc({
 })(markdown(components)`
 
 Provides access to <https://segment.com/> mobile analytics. Wraps
-Segment's [iOS](https://segment.com/docs/sources/mobile/ios/)
-and [Android](https://segment.com/docs/sources/mobile/android/) sources.
+Segment's [iOS](https://segment.com/docs/sources/mobile/ios/) and [Android](https://segment.com/docs/sources/mobile/android/) sources.
 
 > **Note:** Session tracking may not work correctly when running Experiences
 in the main Expo app. It will work correctly if you create a standalone app.
@@ -47,9 +46,8 @@ write key for your Android source in Segment.
 ### Expo.Segment.identify(userId)
 
 Associates the current user with a user ID. Call this after
-calling [\`Expo.Segment.initializeIOS()\`](#exposegmentinitializeios "Expo.Segment.initializeIOS")
-and [\`Expo.Segment.initializeAndroid()\`](#exposegmentinitializeandroid "Expo.Segment.initializeAndroid")
-but before other segment calls. See <https://segment.com/docs/spec/identify/>.
+calling [\`Expo.Segment.initializeIOS()\`](#exposegmentinitializeios "Expo.Segment.initializeIOS") and [\`Expo.Segment.initializeAndroid()\`](#exposegmentinitializeandroid "Expo.Segment.initializeAndroid") but
+ before other segment calls. See <https://segment.com/docs/spec/identify/>.
 
 #### Arguments
 
@@ -58,9 +56,8 @@ but before other segment calls. See <https://segment.com/docs/spec/identify/>.
 ### Expo.Segment.identifyWithTraits(userId, traits)
 
 Associates the current user with a user ID and some metadata. Call this after
-calling [\`Expo.Segment.initializeIOS()\`](#exposegmentinitializeios "Expo.Segment.initializeIOS")
-and [\`Expo.Segment.initializeAndroid()\`](#exposegmentinitializeandroid "Expo.Segment.initializeAndroid")
-but before other segment calls. See <https://segment.com/docs/spec/identify/>.
+calling [\`Expo.Segment.initializeIOS()\`](#exposegmentinitializeios "Expo.Segment.initializeIOS") and [\`Expo.Segment.initializeAndroid()\`](#exposegmentinitializeandroid "Expo.Segment.initializeAndroid") but
+before other segment calls. See <https://segment.com/docs/spec/identify/>.
 
 #### Arguments
 

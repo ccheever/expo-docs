@@ -62,8 +62,7 @@ Open a database, creating it if it doesn't exist, and return a \`Database\` obje
 
   ### Transaction objects
 
-  A \`Transaction\` object is passed in as a parameter to the \`callback\`
-  parameter for the \`db.transaction()\` method on a \`Database\` (see above).
+  A \`Transaction\` object is passed in as a parameter to the \`callback\` parameter for the \`db.transaction()\` method on a \`Database\` (see above).
   It allows enqueuing SQL statements to perform in a database transaction. It
   supports one method:
 
@@ -90,8 +89,8 @@ Open a database, creating it if it doesn't exist, and return a \`Database\` obje
 
   ### ResultSet objects
 
-  \`ResultSet\` objects are returned through second parameter of the \`success\`
-  callback for the \`tx.executeSql()\` method on a \`Transaction\` (see above).
+  \`ResultSet\` objects are returned through second parameter of the \`success\` callback
+  for the \`tx.executeSql()\` method on a \`Transaction\` (see above).
   They have the following form:
 
   ${<Code>{`
