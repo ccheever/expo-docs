@@ -20,12 +20,50 @@ export default class SnackEmbed extends React.Component {
   }
 
   render() {
+    // TODO: Handle `data-snack-sdk-version` somehow
+    // maybe using `context`?
+    var embedProps
+    if (this.props.snackId) {
+      embedProps = { 'data-snack-id': this.props.snackId }
+    } else {
+      let code = React.Children.toArray(this.props.children).join('').trim()
+      embedProps = {
+        'data-snack-code': code
+      }
+      if (this.props.hasOwnProperty('name')) {
+        embedProps['data-snack-name'] = this.props.name
+      }
+      if (this.props.hasOwnProperty('description')) {
+        embedProps['data-snack-description'] = this.props.description
+      }
+    }
+
+    if (this.props.hasOwnProperty('platform')) {
+      embedProps['data-snack-platform'] = this.props.platform
+    } else {
+      embedProps['data-snack-platform'] = 'ios'
+    }
+
+    if (this.props.hasOwnProperty('preview')) {
+      embedProps['data-snack-preview'] = this.props.preview
+    } else {
+      embedProps['data-snack-predview'] = false
+    }
+
+    if (this.props.hasOwnProperty('theme')) {
+      embedProps['data-snack-theme'] = this.props.theme
+    } else {
+      embedProps['data-snack-theme'] = 'light'
+    }
+
+    var embedStyle = {}
+    if (this.props.hasOwnProperty('style')) {
+      embedStyle = this.props.style
+    }
+
     return (
       <div
-        data-snack-id={this.props.snackId}
-        data-snack-platform="ios"
-        data-snack-preview={false}
-        data-snack-theme="light"
+        {...embedProps}
         style={{
           overflow: 'hidden',
           background: '#fafafa',
@@ -34,7 +72,8 @@ export default class SnackEmbed extends React.Component {
           height: 505,
           width: '100%',
           borderRadius: 4,
-          borderColor: 'rgba(0,0,0,.16)'
+          borderColor: 'rgba(0,0,0,.16)',
+          ...embedStyle
         }}
       />
     )
