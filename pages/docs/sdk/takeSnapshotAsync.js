@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { ccheever } from '../../../lib/data/team'
 export default withDoc({
   title: 'takeSnapshotAsync',
   date: '2 Sep 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 Given a view, \`takeSnapshotAsync\` will essentially screenshot that view and return an image for you. This is very useful for things like signature pads, where the user draws something and then you want to save an image from it.

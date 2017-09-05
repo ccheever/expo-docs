@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { ccheever } from '../../../lib/data/team'
 export default withDoc({
   title: 'Community',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 Want to chat about Expo? The best way to get in touch with our team and other people developing with Expo is to join our Slack chat. We always like to hear about projects and components that people are building on Expo and there's usually someone available to answer questions.

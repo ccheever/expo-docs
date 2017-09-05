@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { Code, InlineCode } from '../../../components/text/code'
 export default withDoc({
   title: 'How Expo Works',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 While it's certainly not necessary to know any of this to use Expo, many engineers like to know how their tools work. We'll walk through a few key concepts here, including:

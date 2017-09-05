@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { Code, InlineCode } from '../../../components/text/code'
 export default withDoc({
   title: 'Font',
   date: '4 Sep 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 Allows loading fonts from the web and using them in React Native components. See more detailed usage information in the [Using Custom Fonts](../guides/using-custom-fonts.html#using-custom-fonts) guide.

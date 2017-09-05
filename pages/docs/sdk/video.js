@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { Code, InlineCode } from '../../../components/text/code'
 export default withDoc({
   title: 'Video',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 A component that displays a video inline with the other React Native UI elements in your app. The display dimensions and position of the video on screen can be set using usual React Native styling.

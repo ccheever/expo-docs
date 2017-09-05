@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -16,7 +16,7 @@ import JSFeaturesTable from '../../../components/js-features-table'
 export default withDoc({
   title: 'Using Modern JavaScript',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 JavaScript is an evolving language. You may have heard of ES2015, ES2016, and so on, which are new versions of JavaScript that have added features like classes, async functions, and more.

@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -16,7 +16,7 @@ import SnackEmbed from '../../../components/snack-embed'
 export default withDoc({
   title: 'Lottie',
   date: '4 Sep 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 Expo includes support for [Lottie](https://airbnb.design/lottie/), the animation library from AirBnB.

@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { ccheever } from '../../../lib/data/team'
 export default withDoc({
   title: 'Fingerprint',
   date: '4 Sep 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 Use TouchID (iOS) or the Fingerprint API (Android) to authenticate the user with a fingerprint scan.

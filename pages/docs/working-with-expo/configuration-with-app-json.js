@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { Code } from '../../../components/text/code'
 export default withDoc({
   title: 'Configuration with app.json',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 \`app.json\` is your go-to place for configuring parts of your app that don't belong in code. It is located at the root of your project next to your \`package.json\`. It looks something like this:

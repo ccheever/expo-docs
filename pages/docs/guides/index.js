@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { ccheever } from '../../../lib/data/team'
 export default withDoc({
   title: 'Guides',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 These guides cover specific goals or features you might want to implement in your Expo project. For example, many people want to [load custom fonts](./using-custom-fonts) besides those which come with the device, or [send push notifications](./push-notifications) to their users. Read whichever guide suits your needs.

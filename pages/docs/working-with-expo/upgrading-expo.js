@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import { ccheever } from '../../../lib/data/team'
 export default withDoc({
   title: 'Upgrading Expo',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 It isn't strictly necessary to update your app when a new version of Expo is released. New versions of the Expo client are backwards compatible with apps published for previous versions. This means that you can download a new version of the Expo client and open apps that were published for previous versions and they will work perfectly.

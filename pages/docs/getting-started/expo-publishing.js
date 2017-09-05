@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 import { TerminalInput } from '../../../components/text/terminal'
 import { Code, InlineCode } from '../../../components/text/code'
 import { HR } from '../../../components/text/paragraph'
@@ -11,7 +11,7 @@ import Image from '../../../components/image'
 export default withDoc({
   title: 'Publishing in Expo',
   date: '26 August 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 While you’re developing your project, you’re writing code on your

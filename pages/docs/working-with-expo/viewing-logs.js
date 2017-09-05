@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 import Image from '../../../components/image'
@@ -15,7 +15,7 @@ import Image from '../../../components/image'
 export default withDoc({
   title: 'Viewing Logs',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 Writing to the logs in an Expo app works just like in the browser: use \`console.log\`, \`console.warn\` and \`console.error\`. Note: we don't currently support \`console.table\` outside of remote debugging mode.

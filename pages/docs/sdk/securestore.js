@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '../../../lib/with-doc'
 
-import { ccheever } from '../../../lib/data/team'
+import { expoteam } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
 // import Image from '../../../components/image'
@@ -16,7 +16,7 @@ import { ccheever } from '../../../lib/data/team'
 export default withDoc({
   title: 'SecureStore',
   date: '30 Aug 2017',
-  authors: [ccheever],
+  authors: [expoteam],
 })(markdown(components)`
 
 Provides access to encrypt and securely store key/value pairs locally on the device.  Each Expo app has a separate storage system and has no access to the storage system of other Expo apps.
