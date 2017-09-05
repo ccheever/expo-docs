@@ -4,7 +4,7 @@ import withDoc, { components } from '../../../lib/with-doc'
 import { ccheever } from '../../../lib/data/team'
 // import { InternalLink, ExternalLink } from "../../../components/text/link";
 // import { P } from "../../../components/text/paragraph";
-// import Image from '../../../components/image'
+import Image from '../../../components/image'
 // import { Code, InlineCode } from '../../../components/text/code'
 // import {
 //   TerminalInput,
@@ -43,6 +43,16 @@ Here are a couple examples of the use of \`GLView\` on Snack:
 The [@community/gl-test](https://expo.io/@community/gl-test) Expo app demonstrates a number of example scenes. The image below is a low-quality capture, try the app on Expo for the best-quality experience. The source code for these scenes is available [here](https://github.com/exponent/gl-test/tree/master/Scenes)
 
 ${<img src={"./gl-test.gif"} />}
+
+${
+  <Image
+    src={`${ASSETS_URL}/docs/sdk/gl-test.gif`}
+    width={480}
+    height={282}
+    caption="Try this on Expo to see in higher fidelity"
+  />
+}
+
 
 ## The gl object
 
