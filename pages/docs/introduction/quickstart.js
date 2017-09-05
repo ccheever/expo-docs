@@ -13,7 +13,7 @@ import { ccheever } from '../../../lib/data/team'
 
 // prettier-ignore
 export default withDoc({
-  title: 'Introduction',
+  title: 'Quick Start',
   date: '30 Aug 2017',
   authors: [ccheever],
 })(markdown(components)`

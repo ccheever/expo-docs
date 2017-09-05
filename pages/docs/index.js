@@ -1,3 +1,3 @@
-import IntroductionToNow from './getting-started/five-minute-guide-to-now'
+import QuickStart from './introduction/quickstart.js'
 
-export default IntroductionToNow
+export default QuickStart
