@@ -16,19 +16,6 @@ RouterEvents.on('routeChangeError', () => {
   NProgress.done()
 })
 
-if (global.document) {
-  const info = [
-    `Version: ${VERSION}`,
-    `Check out our code here: https://zeit.co/oss`,
-    `Have a great day! 📣🐢`
-  ]
-
-  for (const message of info) {
-    // eslint-disable-next-line no-console
-    console.log(message)
-  }
-}
-
 class Head extends React.PureComponent {
   render() {
     const titlePrefix = null != this.props.titlePrefix
