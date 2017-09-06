@@ -65,7 +65,7 @@ An object of the form ${<InlineCode>{`{ id, name, firstName, middleName, lastNam
 #### Constants and additional fields
 
 This table illustrates what fields will be added on demand to every contact. Sample usage: \`Expo.Contacts.EMAILS\`.
-
+${<Code>{`
 | Constant                     | Name of returned field            |
 | ---------------------------- | --------------------------------- |
 | PHONE_NUMBERS                | phoneNumbers                      |
@@ -84,7 +84,7 @@ This table illustrates what fields will be added on demand to every contact. Sam
 | IM_ADDRESSES                 | instantMessageAddresses           |
 | URLS                         | urlAddresses                      |
 | DATES                        | dates                             |
-
+`}</Code>}
 #### Example
 
 ${<Code>{`async function showFirstContactAsync() {
