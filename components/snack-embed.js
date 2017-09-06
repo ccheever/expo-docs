@@ -3,6 +3,7 @@ import React from 'react'
 export default class SnackEmbed extends React.Component {
   componentDidMount() {
     var script = document.getElementById('snack')
+    // inject script if it hasn't been loaded by a previous page
     if (!script) {
       script = document.createElement('script')
       script.src = 'https://snack.expo.io/embed.js'
@@ -14,6 +15,7 @@ export default class SnackEmbed extends React.Component {
         window.ExpoSnack.initialize()
       })
     }
+
     if (window.ExpoSnack) {
       window.ExpoSnack.initialize()
     }
@@ -22,6 +24,8 @@ export default class SnackEmbed extends React.Component {
   render() {
     // TODO: Handle `data-snack-sdk-version` somehow
     // maybe using `context`?
+
+    // get snack data from snack id or from inline code
     var embedProps
     if (this.props.snackId) {
       embedProps = { 'data-snack-id': this.props.snackId }
@@ -38,6 +42,7 @@ export default class SnackEmbed extends React.Component {
       }
     }
 
+    // fill in default options for snack styling
     if (this.props.hasOwnProperty('platform')) {
       embedProps['data-snack-platform'] = this.props.platform
     } else {
@@ -47,7 +52,7 @@ export default class SnackEmbed extends React.Component {
     if (this.props.hasOwnProperty('preview')) {
       embedProps['data-snack-preview'] = this.props.preview
     } else {
-      embedProps['data-snack-predview'] = false
+      embedProps['data-snack-preview'] = false
     }
 
     if (this.props.hasOwnProperty('theme')) {
