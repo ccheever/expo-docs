@@ -7,7 +7,7 @@ const Caption = ({ children }) => (
       {`
       p {
         color: #999;
-        font-size: 12px;
+        font-size: 0.8rem;
         margin: -20px 0 40px 0;
         text-align: center;
       }

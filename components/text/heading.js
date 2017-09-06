@@ -1,11 +1,14 @@
+import { FONT_FAMILY_MONO, FONT_FAMILY_SANS_BOLD } from '../css-config'
+
 export const H1 = ({ children }) => (
   <h1>
     {children}
     <style jsx>
       {`
       h1 {
-        font-weight: 200;
-        font-size: 32px;
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        margin-bottom: 1.5rem;
       }
     `}
     </style>
@@ -18,6 +21,7 @@ const B = ({ children }) => (
     <style jsx>
       {`
       span {
+        font-family: ${FONT_FAMILY_SANS_BOLD};
         font-weight: 400;
       }
     `}
@@ -33,8 +37,11 @@ export const H2 = ({ children }) => (
     <style jsx>
       {`
       h2 {
-        font-weight: normal;
-        font-size: 24px;
+        font-family: ${FONT_FAMILY_SANS_BOLD};
+        font-weight: 400;
+        line-height: 1.75rem;
+        font-size: 1.875rem;
+        margin-bottom: 1.5rem;
       }
     `}
     </style>
@@ -47,8 +54,9 @@ export const H3 = ({ children }) => (
     <style jsx>
       {`
       h3 {
-        font-weight: bold;
-        font-size: 18px;
+        font-size: 1.375rem;
+        line-height: 1.75rem;
+        margin-bottom: 1.5rem;
       }
     `}
     </style>
@@ -60,15 +68,18 @@ export const H4 = ({ children, isCommand }) => (
     {children}
     <style jsx>
       {`
-      h3 {
-        font-weight: bold;
-        font-size: 16px;
+      h4 {
+        font-family: ${FONT_FAMILY_SANS_BOLD};
+        font-weight: 400;
+        line-height: 1.625rem;
+        font-size: 1.1rem;
+        margin-bottom: 0.25rem;
       }
 
       .command {
-        color: #bd10e0;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        font-family: ${FONT_FAMILY_MONO};
         font-size: 0.9em;
+        color: #bd10e0;
       }
     `}
     </style>

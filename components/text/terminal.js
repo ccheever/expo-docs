@@ -1,3 +1,5 @@
+import { FONT_FAMILY_MONO } from '../css-config'
+
 export const TerminalInput = ({ children }) => (
   <div>
     {Array.isArray(children)
@@ -11,7 +13,7 @@ export const TerminalInput = ({ children }) => (
         div {
           border: 1px solid #eaeaea;
           color: #bd10e0;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+          font-family: ${FONT_FAMILY_MONO};
           font-size: 13px;
           line-height: 20px;
           margin: 40px 0;
@@ -41,7 +43,7 @@ export const TerminalOutput = ({ children }) => (
       .output {
         background: #000;
         color: #fff;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+        font-family: ${FONT_FAMILY_MONO};
         font-size: 13px;
         line-height: 20px;
         margin: 40px 0;

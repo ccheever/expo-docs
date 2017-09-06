@@ -17,7 +17,7 @@ export default withDoc({
   date: '30 Aug 2017',
   authors: [expoteam],
 })(markdown(components)`
-# Mac OS Proxy Configuration (Sierra)
+## Mac OS Proxy Configuration (Sierra)
 
 > If anything goes wrong, you can revert back to the "Automatic Proxy settings" in System Network Preferences using Automatic Proxy Configuration \`your-corporate-proxy-uri:port-number/proxy.pac\`
 
@@ -72,6 +72,7 @@ npm, git, Brew, Curl, and any other command line applications need proxy access 
 
 #### For npm
 Open \`~/.npmrc\` and set:
+
 ${<Code>{`
 http_proxy=http://localhost:8888
 https_proxy=http://localhost:8888
@@ -79,15 +80,17 @@ https_proxy=http://localhost:8888
 
 ### For git
 Open \`~/.gitconfig\` and set
+
 ${<Code>{`
 [http]
- 	proxy = http://localhost:8888
+  proxy = http://localhost:8888
 [https]
-	proxy = http://localhost:8888
+  proxy = http://localhost:8888
 `}</Code>}
 
 ### For Command line applications
 Depending on your shell, and config, Open \`~/.bashrc\`, \`~/.bash_profile\`, or \`~/.zshrc\` or wherever you set your shell variables, and set:
+
 ${<Code>{`
 export HTTP_PROXY="http://localhost:8888"
 export http_proxy="http://localhost:8888"

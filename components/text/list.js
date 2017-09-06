@@ -23,10 +23,10 @@ export const UL = ({ children }) => (
 export const OL = ({ children }) => (
   <ol>
     {children}
-    <style jsx>
+    <style jsx global>
       {`
       ol {
-        padding: 0;
+        padding-left: 0;
         margin-left: 15px;
       }
     `}
@@ -40,9 +40,9 @@ export const LI = ({ children }) => (
     <style jsx>
       {`
       li {
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 10px;
+        font-size: 1rem;
+        line-height: 1.725rem;
+        margin-bottom: 1.5rem;
       }
     `}
     </style>
