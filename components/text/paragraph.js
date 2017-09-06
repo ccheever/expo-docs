@@ -1,12 +1,14 @@
+import { FONT_FAMILY_SANS, FONT_FAMILY_SANS_BOLD } from '../css-config'
+
 export const P = ({ children }) => (
   <p>
     {children}
     <style jsx>
       {`
       p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.725rem;
+        margin-bottom: 1.5rem;
       }
     `}
     </style>
@@ -19,10 +21,9 @@ export const PDIV = ({ children }) => (
     <style jsx>
       {`
       div {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 20px;
+        font-size: 1rem;
+        line-height: 1.725rem;
+        margin-bottom: 1.5rem;
       }
     `}
     </style>
@@ -35,7 +36,9 @@ const B = ({ children }) => (
     <style jsx>
       {`
       span {
-        font-weight: 600;
+        font-family: ${FONT_FAMILY_SANS_BOLD};
+        font-weight: 400;
+        letter-spacing: 0.3px;
       }
     `}
     </style>
@@ -59,9 +62,10 @@ export const Quote = ({ children }) => (
     {children}
     <style jsx>{`
       blockquote {
-        padding: 10px 20px;
+        font-family: ${FONT_FAMILY_SANS};
+        padding: 12px 24px;
         border-left: 5px solid #000;
-        margin: 20px 0;
+        margin: 0 0 1.5rem 0;
         color: #888;
       }
 

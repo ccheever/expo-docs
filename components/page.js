@@ -19,15 +19,52 @@ class Page extends React.Component {
           <style
             dangerouslySetInnerHTML={{
               __html: `
-            html {
-              height: 100%;
-              box-sizing: border-box;
+            @font-face {
+              font-family: 'Neue Haas Unica';
+              src: url('/static/fonts/NeueHaasUnica-Pro.eot');
+              src: url('/static/fonts/NeueHaasUnica-Pro.woff2') format('woff2'),
+                   url('/static/fonts/NeueHaasUnica-Pro.woff') format('woff'),
+                   url('/static/fonts/NeueHaasUnica-Pro.ttf') format('truetype');
             }
 
-            *,
-            *:before,
-            *:after {
-              box-sizing: inherit;
+            @font-face {
+              font-family: 'Neue Haas Unica SemiBold';
+              src: url('/static/fonts/NeueHaasUnica-SemiBold.eot');
+              src: url('/static/fonts/NeueHaasUnica-SemiBold.woff2') format('woff2'),
+                   url('/static/fonts/NeueHaasUnica-SemiBold.woff') format('woff'),
+                   url('/static/fonts/NeueHaasUnica-SemiBold.ttf') format('truetype');
+            }
+
+            html, body, div, span, applet, object, iframe,
+            h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+            a, abbr, acronym, address, big, cite, code,
+            del, dfn, em, img, ins, kbd, q, s, samp,
+            small, strike, strong, sub, sup, tt, var,
+            b, u, i, center,
+            dl, dt, dd, ol, ul, li,
+            fieldset, form, label, legend,
+            table, caption, tbody, tfoot, thead, tr, th, td,
+            article, aside, canvas, details, embed,
+            figure, figcaption, footer, header, hgroup,
+            menu, nav, output, ruby, section, summary,
+            time, mark, audio, video {
+              font-weight: 400;
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              border: 0;
+              vertical-align: baseline;
+            }
+
+            article, aside, details, figcaption, figure,
+            footer, header, hgroup, menu, nav, section {
+              display: block;
+            }
+
+            html, body {
+              height: 100%;
+              background-color: ${darkBg ? '#000' : '#fff'};
+              color: ${darkBg ? '#fff' : '#000'};
             }
 
             a {
@@ -35,17 +72,10 @@ class Page extends React.Component {
             }
 
             body {
-              position: relative;
-              min-height: 100%;
-              margin: 0;
-              padding-bottom: 6rem;
               font-family: ${FONT_FAMILY_SANS};
               text-rendering: optimizeLegibility;
-            }
-
-            html, body {
-              background-color: ${darkBg ? '#000' : '#fff'};
-              color: ${darkBg ? '#fff' : '#000'};
+              font-size: 16px;
+              padding-bottom: 24px;
             }
 
             ${darkBg ? `

@@ -37,12 +37,13 @@ export class NavLink extends React.Component {
         <style jsx>{`
           a {
             text-decoration: none;
-            font-size: 14px;
+            font-size: 0.85rem;
             color: #000;
           }
 
           a.selected {
-            font-weight: 600;
+            font-family: "Neue Haas Unica SemiBold";
+            font-weight: 400;
             color: #000;
           }
         `}</style>
@@ -62,7 +63,7 @@ export default class DocsNavbarDesktop extends React.Component {
         <NavLink info={info} url={this.props.url} />
         <style jsx>{`
           .link {
-            margin: 10px 0;
+            margin: 8px 0;
           }
 
           @media screen and (max-width: 950px) {
@@ -112,7 +113,7 @@ export default class DocsNavbarDesktop extends React.Component {
           }
 
           .category.level-1 {
-            margin: 0 0 50px 0;
+            margin: 0px 0 48px 0;
           }
 
           @media screen and (max-width: 950px) {

@@ -1,23 +1,27 @@
+import { FONT_FAMILY_MONO } from '../css-config'
+
 export const Code = ({ children }) => (
   <pre
     style={{
       border: '1px solid #eaeaea',
-      padding: '20px',
-      margin: '40px 0',
+      padding: '16px',
+      margin: '0',
       whiteSpace: 'pre',
+      overflowWrap: 'break-word',
       overflow: 'auto',
       WebkitOverflowScrolling: 'touch'
     }}
   >
     <code>
-      {children}
+      {children.trim()}
       <style jsx>
         {`
         code {
           color: #bd10e0;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-          font-size: 13px;
-          line-height: 20px;
+          font-family: ${FONT_FAMILY_MONO};
+          font-size: 12px;
+          line-height: 1rem;
+          margin-bottom: 2rem;
         }
       `}
       </style>
@@ -32,8 +36,8 @@ export const InlineCode = ({ children, noWrap }) => (
       {`
       code {
         color: #bd10e0;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-        font-size: 0.9em;
+        font-family: ${FONT_FAMILY_MONO};
+        font-size: 0.9rem;
         white-space: pre-wrap;
       }
 

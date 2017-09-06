@@ -11,7 +11,6 @@ const Image = ({
   src,
   width,
   height,
-  margin = 40,
   caption,
   video = false,
   muted = true,
@@ -28,7 +27,7 @@ const Image = ({
   const aspectRatio = String(height / width * 100) + '%'
 
   return (
-    <figure style={{ margin: `${margin}px 0` }}>
+    <figure style={{ margin: `0 0 1.5rem 0` }}>
       <main style={{ width }}>
         <div style={{ paddingBottom: aspectRatio }}>
           {video
@@ -64,7 +63,7 @@ const Image = ({
           }
 
           p {
-            font-size: 11px;
+            font-size: 0.8rem;
             text-align: center;
             color: #999;
           }
