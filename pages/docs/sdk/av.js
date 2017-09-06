@@ -10,7 +10,7 @@ import { Code, InlineCode } from '../../../components/text/code'
 //   TerminalInput,
 //   TerminalOutput
 // } from "../../../components/text/terminal";
-//57, 65, 73, 123, 129, 139, 143, 147, 155, 165, 173, 181, 189
+
 // prettier-ignore
 export default withDoc({
   title: 'AV',
