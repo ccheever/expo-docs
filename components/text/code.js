@@ -12,7 +12,7 @@ export const Code = ({ children }) => (
       WebkitOverflowScrolling: 'touch'
     }}
   >
-    <code>
+    <code className="language-js">
       {children.trim()}
       <style jsx>
         {`
