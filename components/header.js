@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Logo from './logo'
+import AlgoliaSearch from './algolia-search'
 
 class Header extends React.PureComponent {
   render() {
@@ -14,6 +15,7 @@ class Header extends React.PureComponent {
               <Logo />
             </a>
           </Link>
+          <AlgoliaSearch router={this.props.router} activeVersion={'v20.0.0'} />
         </header>
         <style jsx>
           {`
@@ -22,6 +24,7 @@ class Header extends React.PureComponent {
               margin: auto;
               padding: 30px 0;
               position: relative;
+              background-color: #FFFFFF;
             }
 
             header.clean {
