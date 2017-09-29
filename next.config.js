@@ -6,6 +6,7 @@ module.exports = {
     const pages = paths.map(path => {
       path = path.replace(/^pages/, '')
       path = path.replace('index.js', '')
+      // TODO: Switching to having `.html`
       path = path.replace('.js', '')
 
       if (path === '/') return path
