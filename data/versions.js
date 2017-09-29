@@ -11,6 +11,6 @@ export const VERSIONS = [
   `v13.0.0`
 ]
 
-export const NEW_DOC_VERSIONS = ['v21.0.0', 'v20.0.0']
+export const NEW_DOC_VERSIONS = ['v21.0.0', 'v20.0.0', 'latest']
 
 export const LATEST_VERSION = 'v' + require('~/package.json').version
