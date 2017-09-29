@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Logo from './logo'
 import AlgoliaSearch from './algolia-search'
+import VersionSelector from './version-selector'
 
 class Header extends React.PureComponent {
   render() {
@@ -15,6 +16,7 @@ class Header extends React.PureComponent {
               <Logo />
             </a>
           </Link>
+          <VersionSelector />
           <AlgoliaSearch router={this.props.router} activeVersion={'v20.0.0'} />
         </header>
         <style jsx>
@@ -22,9 +24,11 @@ class Header extends React.PureComponent {
             header {
               max-width: 900px;
               margin: auto;
-              padding: 30px 0;
+              padding: 30px 0px 10px 0px;
               position: relative;
               background-color: #FFFFFF;
+              border-bottom: 1px solid #EEE;
+              margin-bottom: 60px;
             }
 
             header.clean {
@@ -33,7 +37,7 @@ class Header extends React.PureComponent {
             }
 
             a.logo {
-              display: block;
+              display: inline-block;
               width: 39px;
               height: 35px;
               position: relative;
