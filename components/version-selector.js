@@ -1,6 +1,6 @@
 import React from 'react'
 import { orderBy } from 'lodash'
-import { LATEST_VERSION } from './url'
+import { LATEST_VERSION } from './utils/url'
 
 const NEW_DOC_VERSIONS = ['v20.0.0']
 
