@@ -44,16 +44,17 @@ class AlgoliaSearch extends React.Component {
         if (this.props.activeVersion === 'latest') {
           route = replaceVersionInUrl(route, 'latest')
         }
-        //console.log(route);
+        // Update URLs for new doc URLs
         var routes = route.split('/')
-        //console.log(routes);
-        routes.splice(0, 3)
+        // Get rid of '/versions'
+        routes.splice(0, 2)
+        // Get rid of .html suffix
         routes[routes.length - 1] = routes[routes.length - 1].replace(
           '.html',
           ''
         )
+        // Add `docs` prefix
         route = '/docs/' + routes.join('/')
-        //console.log(route);
         Router.push(route)
         document.getElementById('docsearch').blur()
         const searchbox = document.querySelector('input#docsearch')
