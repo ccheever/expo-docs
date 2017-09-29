@@ -1,7 +1,9 @@
 import React from 'react'
-import data from '~/data/v20'
 import Link from 'next/link'
 import qs from 'query-string'
+
+import v20 from '~/data/v20'
+import v21 from '~/data/v21'
 
 export class NavLink extends React.Component {
   getCurrentHref() {
@@ -133,6 +135,10 @@ export default class DocsNavbarDesktop extends React.Component {
   }
 
   render() {
+    let data = v21
+    if (this.props.activeVersion === 'v20.0.0') {
+      data = v20
+    }
     return (
       <div>
         {data.map(categoryInfo => this.renderCategory(categoryInfo))}

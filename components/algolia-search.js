@@ -2,7 +2,8 @@ import React from 'react'
 // import presets from 'glamor-media-query-presets';
 
 // import { rhythm, scale } from '../utils/typography';
-import { LATEST_VERSION, replaceVersionInUrl } from './utils/url'
+import { replaceVersionInUrl } from './utils/url'
+import { LATEST_VERSION } from '~/data/versions'
 
 import Router from 'next/router'
 

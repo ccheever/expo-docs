@@ -16,8 +16,14 @@ class Header extends React.PureComponent {
               <Logo />
             </a>
           </Link>
-          <VersionSelector />
-          <AlgoliaSearch router={this.props.router} activeVersion={'v20.0.0'} />
+          <VersionSelector
+            activeVersion={this.props.activeVersion}
+            setVersion={this.props.setVersion}
+          />
+          <AlgoliaSearch
+            router={this.props.router}
+            activeVersion={this.props.activeVersion}
+          />
         </header>
         <style jsx>
           {`
