@@ -1,7 +1,7 @@
 import markdown from 'markdown-in-js'
 import withDoc, { components } from '~/lib/with-doc'
 
-import { expoteam } from '~/lib/data/team'
+import { expoteam } from '~/data/team'
 // import { InternalLink, ExternalLink } from "~/components/text/link";
 // import { P } from "~/components/text/paragraph";
 // import Image from '~/components/image'

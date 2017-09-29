@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../../../lib/data/docs'
+import data from '~/data/v20'
 import Link from 'next/link'
 import qs from 'query-string'
 

@@ -59,7 +59,7 @@ ${
 `)
 ~~~
 
-Then you can add it to the sidebar by editing the file located at: `lib/data/docs.js`.
+Then you can add it to the sidebar by editing the file located at: `data/v20.js`.
 
 ### Adding Images and Assets
 
