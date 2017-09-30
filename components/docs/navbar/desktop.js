@@ -36,7 +36,7 @@ export class NavLink extends React.Component {
 
     return (
       <div>
-        <Link href={info.href} as={info.as || info.href}>
+        <Link prefetch href={info.href} as={info.as || info.href}>
           <a className={this.isSelected() ? 'selected' : ''}>{info.name}</a>
         </Link>
         <style jsx>{`
