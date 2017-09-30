@@ -59,7 +59,6 @@ ${
 
 -   Open Genymotion and navigate to Settings -> ADB. Select "Use custom Android SDK tools" and update with your Android SDK location:
 
-[![](./genymotion-android-tools.png)](/_images/genymotion-android-tools.png)
 
 ${
   <Image

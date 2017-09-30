@@ -46,7 +46,7 @@ ${
 
 ## Project dialog
 
-Click on Project and you'll see everything you can do from here. Naturally you cannot close a project or show it in finder, etc, because you don't have one opened yet.![XDE home project dialog](./xde-project-dialog.png)
+Click on Project and you'll see everything you can do from here. Naturally you cannot close a project or show it in finder, etc, because you don't have one opened yet.
 
 ${
     <Image
@@ -60,7 +60,7 @@ ${
 
 ## Sign out, if you want
 
-At any time you can click on your username in the top right and sign out. Or log out. Who can really agree on the verbiage?![XDE sign out](./xde-signout.png)
+At any time you can click on your username in the top right and sign out. Or log out. Who can really agree on the verbiage?
 
 ${
     <Image
@@ -74,7 +74,7 @@ ${
 
 ## Project screen
 
-So we've opened up a new project. The left pane is the React Packager, which you can learn more about in [Up and Running](../guides/up-and-running.html#up-and-running) and in [How Expo Works](../guides/how-expo-works.html#how-expo-works). The right pane is for device logs, which you can read more about in [Viewing Logs](../guides/logging.html#logging).![XDE project](./xde-project-opened.png)
+So we've opened up a new project. The left pane is the React Packager, which you can learn more about in [Up and Running](../guides/up-and-running.html#up-and-running) and in [How Expo Works](../guides/how-expo-works.html#how-expo-works). The right pane is for device logs, which you can read more about in [Viewing Logs](../guides/logging.html#logging).
 
 ${
     <Image
@@ -114,7 +114,7 @@ ${
 
 ## Development mode
 
-You'll often want to work on your project in development mode. This makes it run a bit more slowly because it adds a lot of runtime validations of your code to warn you of potential problems, but it also gives you access to live reloading, hot reloading, remote debugging and the element inspector. Disable Development Mode and reload your app if you want to test anything related to performance.![XDE project development mode](./xde-development-mode.png)
+You'll often want to work on your project in development mode. This makes it run a bit more slowly because it adds a lot of runtime validations of your code to warn you of potential problems, but it also gives you access to live reloading, hot reloading, remote debugging and the element inspector. Disable Development Mode and reload your app if you want to test anything related to performance.
 
 
 ${
@@ -128,7 +128,7 @@ ${
 
 ## Project dialog (with project open)
 
-In addition to the options provided from the home screen, with a project opened we give you access to a few shortcuts like showing the project directory in finder.![XDE project dialog in open project](./xde-project-opened.png)
+In addition to the options provided from the home screen, with a project opened we give you access to a few shortcuts like showing the project directory in finder.
 
 ${
     <Image
@@ -144,7 +144,7 @@ ${
 
 While you work on your project, it is given a temporary URL which is served from your computer. When you're ready to share the project with others, you can **Publish** the project to get a permanent URL (something like \`expo.io/@your-username/your-app-slug\`) that anybody can open with the Expo Client.
 
-When you click the **Publish** button in XDE, you'll be asked to confirm that you want your project to be available to the public. XDE takes some time to generate your minified JS bundle and upload your Assets to our servers, and once it's done, prints out your app's published URL. You can read more details about how publishing works in [How Expo Works](../guides/how-expo-works.html#how-expo-works) and the [Publishing guide](../guides/publishing.html).![XDE publish](./xde-publish.png)
+When you click the **Publish** button in XDE, you'll be asked to confirm that you want your project to be available to the public. XDE takes some time to generate your minified JS bundle and upload your Assets to our servers, and once it's done, prints out your app's published URL. You can read more details about how publishing works in [How Expo Works](../guides/how-expo-works.html#how-expo-works) and the [Publishing guide](../guides/publishing.html).
 
 ${
     <Image
