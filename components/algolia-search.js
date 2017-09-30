@@ -22,6 +22,17 @@ class AlgoliaSearch extends React.Component {
     }
   }
 
+  processUrl(url) {
+    // Update URLs for new doc URLs
+    var routes = url.split('/')
+    // Get rid of '/versions'
+    routes.splice(0, 2)
+    // Get rid of .html suffix
+    routes[routes.length - 1] = routes[routes.length - 1].replace('.html', '')
+    // Add `docs` prefix
+    return '/docs/' + routes.join('/')
+  }
+
   componentDidMount() {
     const docsearch = require('docsearch.js')
     const Hotshot = require('hotshot')
@@ -41,21 +52,14 @@ class AlgoliaSearch extends React.Component {
         input.setVal('')
         const url = suggestion.url
         let route = url.match(/https?:\/\/(.*)(\/versions\/.*)/)[2]
+
+        let asPath = null
         if (this.props.activeVersion === 'latest') {
-          route = replaceVersionInUrl(route, 'latest')
+          asPath = this.processUrl(replaceVersionInUrl(route, 'latest'))
         }
-        // Update URLs for new doc URLs
-        var routes = route.split('/')
-        // Get rid of '/versions'
-        routes.splice(0, 2)
-        // Get rid of .html suffix
-        routes[routes.length - 1] = routes[routes.length - 1].replace(
-          '.html',
-          ''
-        )
-        // Add `docs` prefix
-        route = '/docs/' + routes.join('/')
-        Router.push(route)
+        route = this.processUrl(route)
+        Router.push(route, asPath)
+
         document.getElementById('docsearch').blur()
         const searchbox = document.querySelector('input#docsearch')
         const reset = document.querySelector('.searchbox [type="reset"]')

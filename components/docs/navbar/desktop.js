@@ -1,9 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import qs from 'query-string'
+import _ from 'lodash'
 
 import v20 from '~/data/v20'
 import v21 from '~/data/v21'
+
+import { replaceVersionInUrl } from '~/components/utils/url'
 
 export class NavLink extends React.Component {
   getCurrentHref() {
@@ -134,10 +137,24 @@ export default class DocsNavbarDesktop extends React.Component {
     )
   }
 
+  updateLinks(data) {
+    data.forEach(element => {
+      if (element.href) {
+        element.as = replaceVersionInUrl(element.href, 'latest')
+      }
+      if (element.posts) {
+        this.updateLinks(element.posts)
+      }
+    })
+  }
+
   render() {
     let data = v21
     if (this.props.activeVersion === 'v20.0.0') {
       data = v20
+    } else if (this.props.activeVersion === 'latest') {
+      data = _.cloneDeep(data)
+      this.updateLinks(data)
     }
     return (
       <div>
