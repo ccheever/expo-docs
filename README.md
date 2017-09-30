@@ -29,13 +29,13 @@ Now the documentation is running at http://localhost:5800
 
 ### Editing Docs Content
 
-You can find the source of the documentation inside the `pages/docs` directory. Documentation is mostly written in markdown with the help of some React components.
+You can find the source of the documentation inside the `pages/versions` directory. Documentation is mostly written in markdown with the help of some React components.
 
 Those components give us additional features which are not available in markdown.
 
 ### Adding New Docs
 
-You can start writing the new docs page by adding it to the `pages/docs` directory starting with the following code:
+You can start writing the new docs page by adding it to the `pages/versions` directory starting with the following code:
 
 ~~~js
 import markdown from 'markdown-in-js'
@@ -59,12 +59,13 @@ ${
 `)
 ~~~
 
-Then you can add it to the sidebar by editing the file located at: `data/v20.js`.
+Then you can add it to the sidebar by editing the file located at: `data/v21.js` (or whatever version of docs you are editing). 
 
 ### Adding Images and Assets
 
 You can add images and assets into the `static` directory. Always try to avoid using hosted images. 
-If you are creating a new docs page, keep you images inside a subdirectory under `static/docs`.
+
+If you are creating a new docs page, keep your images inside a subdirectory under `static/docs`.
 
 ### New Components
 
