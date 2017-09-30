@@ -4,35 +4,35 @@ export default [
     posts: [
       {
         name: 'Quick Start',
-        href: '/docs/v21.0.0/introduction/quickstart'
+        href: '/versions/v21.0.0/introduction/quickstart'
       },
       {
         name: 'Installation',
-        href: '/docs/v21.0.0/introduction/installation'
+        href: '/versions/v21.0.0/introduction/installation'
       },
       {
         name: 'XDE Tour',
-        href: '/docs/v21.0.0/introduction/xde-tour'
+        href: '/versions/v21.0.0/introduction/xde-tour'
       },
       {
         name: 'Project Lifecycle',
-        href: '/docs/v21.0.0/introduction/project-lifecycle'
+        href: '/versions/v21.0.0/introduction/project-lifecycle'
       },
       {
         name: 'Community',
-        href: '/docs/v21.0.0/introduction/community'
+        href: '/versions/v21.0.0/introduction/community'
       },
       {
         name: 'Additional Resources',
-        href: '/docs/v21.0.0/introduction/additional-resources'
+        href: '/versions/v21.0.0/introduction/additional-resources'
       },
       {
         name: 'Troubleshooting Proxies',
-        href: '/docs/v21.0.0/introduction/troubleshooting-proxies'
+        href: '/versions/v21.0.0/introduction/troubleshooting-proxies'
       },
       {
         name: 'Frequently Asked Questions',
-        href: '/docs/v21.0.0/introduction/faq'
+        href: '/versions/v21.0.0/introduction/faq'
       }
     ]
   },
@@ -41,124 +41,124 @@ export default [
     posts: [
       {
         name: 'Up and Running',
-        href: '/docs/v21.0.0/guides/up-and-running'
+        href: '/versions/v21.0.0/guides/up-and-running'
       },
       {
         name: 'Configuration with app.json',
-        href: '/docs/v21.0.0/guides/configuration-with-app-json'
+        href: '/versions/v21.0.0/guides/configuration-with-app-json'
       },
       {
         name: 'Development Mode',
-        href: '/docs/v21.0.0/guides/development-mode'
+        href: '/versions/v21.0.0/guides/development-mode'
       },
       {
         name: 'exp Command-Line Interface',
-        href: '/docs/v21.0.0/guides/command-line-interface'
+        href: '/versions/v21.0.0/guides/command-line-interface'
       },
       {
         name: 'Viewing Logs',
-        href: '/docs/v21.0.0/guides/viewing-logs'
+        href: '/versions/v21.0.0/guides/viewing-logs'
       },
       {
         name: 'Debugging',
-        href: '/docs/v21.0.0/guides/debugging'
+        href: '/versions/v21.0.0/guides/debugging'
       },
       {
         name: 'Genymotion',
-        href: '/docs/v21.0.0/guides/genymotion'
+        href: '/versions/v21.0.0/guides/genymotion'
       },
       {
         name: 'Building Standalone Apps',
-        href: '/docs/v21.0.0/guides/building-standalone-apps'
+        href: '/versions/v21.0.0/guides/building-standalone-apps'
       },
       {
         name: 'Publishing',
-        href: '/docs/v21.0.0/guides/publishing'
+        href: '/versions/v21.0.0/guides/publishing'
       },
       {
         name: 'Linking',
-        href: '/docs/v21.0.0/guides/linking'
+        href: '/versions/v21.0.0/guides/linking'
       },
       {
         name: 'ExpoKit',
         posts: [
           {
             name: 'Detaching/Ejecting',
-            href: '/docs/v21.0.0/guides/detaching-with-expokit'
+            href: '/versions/v21.0.0/guides/detaching-with-expokit'
           },
           {
             name: 'Advanced ExpoKit Topics',
-            href: '/docs/v21.0.0/guides/advanced-expokit-topics'
+            href: '/versions/v21.0.0/guides/advanced-expokit-topics'
           }
         ]
       },
       {
         name: 'How Expo Works',
-        href: '/docs/v21.0.0/guides/how-expo-works'
+        href: '/versions/v21.0.0/guides/how-expo-works'
       },
       {
         name: 'Upgrading Expo',
-        href: '/docs/v21.0.0/guides/upgrading-expo'
+        href: '/versions/v21.0.0/guides/upgrading-expo'
       }
     ]
   },
   {
     name: 'Guides',
-    href: '/docs/v21.0.0/guides/',
+    href: '/versions/v21.0.0/guides/',
     posts: [
       {
         name: 'Assets',
-        href: '/docs/v21.0.0/guides/assets',
+        href: '/versions/v21.0.0/guides/assets',
         posts: [
           {
             name: 'Preloading & Caching Assets',
-            href: '/docs/v21.0.0/guides/preloading-caching-assets'
+            href: '/versions/v21.0.0/guides/preloading-caching-assets'
           }
         ]
       },
       {
         name: 'Error Handling',
-        href: '/docs/v21.0.0/guides/error-handling'
+        href: '/versions/v21.0.0/guides/error-handling'
       },
       {
         name: 'Icons',
-        href: '/docs/v21.0.0/guides/icons'
+        href: '/versions/v21.0.0/guides/icons'
       },
       {
         name: 'Using Custom Fonts',
-        href: '/docs/v21.0.0/guides/custom-fonts'
+        href: '/versions/v21.0.0/guides/custom-fonts'
       },
       {
         name: 'Configuring Status Bar',
-        href: '/docs/v21.0.0/guides/configuring-status-bar'
+        href: '/versions/v21.0.0/guides/configuring-status-bar'
       },
       {
         name: 'Routing & Navigation',
-        href: '/docs/v21.0.0/guides/routing-navigation'
+        href: '/versions/v21.0.0/guides/routing-navigation'
       },
       {
         name: 'Push Notifications',
-        href: '/docs/v21.0.0/guides/push-notifications'
+        href: '/versions/v21.0.0/guides/push-notifications'
       },
       {
         name: 'Using Modern JavaScript',
-        href: '/docs/v21.0.0/guides/modern-javascript'
+        href: '/versions/v21.0.0/guides/modern-javascript'
       },
       {
         name: 'Using ClojureScript',
-        href: '/docs/v21.0.0/guides/clojurescript'
+        href: '/versions/v21.0.0/guides/clojurescript'
       },
       {
         name: 'Using Firebase',
-        href: '/docs/v21.0.0/guides/firebase'
+        href: '/versions/v21.0.0/guides/firebase'
       },
       {
         name: 'Using GraphQL',
-        href: '/docs/v21.0.0/guides/graphql'
+        href: '/versions/v21.0.0/guides/graphql'
       },
       {
         name: 'Using Sentry',
-        href: '/docs/v21.0.0/guides/sentry'
+        href: '/versions/v21.0.0/guides/sentry'
       }
     ]
   },
@@ -168,202 +168,202 @@ export default [
     posts: [
       {
         name: 'Creating a 2D Game',
-        href: '/docs/v21.0.0/tutorials/creating-a-2d-game'
+        href: '/versions/v21.0.0/tutorials/creating-a-2d-game'
       }
     ]
   },
 
   {
     name: 'SDK API Referece',
-    href: '/docs/v21.0.0/sdk',
+    href: '/versions/v21.0.0/sdk',
     posts: [
       {
         name: 'Introduction',
-        href: '/docs/v21.0.0/sdk'
+        href: '/versions/v21.0.0/sdk'
       },
       {
         name: 'Accelerometer',
-        href: '/docs/v21.0.0/sdk/accelerometer'
+        href: '/versions/v21.0.0/sdk/accelerometer'
       },
       {
         name: 'Amplitude',
-        href: '/docs/v21.0.0/sdk/amplitude'
+        href: '/versions/v21.0.0/sdk/amplitude'
       },
       {
         name: 'AppLoading',
-        href: '/docs/v21.0.0/sdk/app-loading'
+        href: '/versions/v21.0.0/sdk/app-loading'
       },
       {
         name: 'ART',
-        href: '/docs/v21.0.0/sdk/art'
+        href: '/versions/v21.0.0/sdk/art'
       },
       {
         name: 'Asset',
-        href: '/docs/v21.0.0/sdk/asset'
+        href: '/versions/v21.0.0/sdk/asset'
       },
       {
         name: 'Audio',
-        href: '/docs/v21.0.0/sdk/audio'
+        href: '/versions/v21.0.0/sdk/audio'
       },
       {
         name: 'AV',
-        href: '/docs/v21.0.0/sdk/av'
+        href: '/versions/v21.0.0/sdk/av'
       },
       {
         name: 'BarCodeScanner',
-        href: '/docs/v21.0.0/sdk/barcodescanner'
+        href: '/versions/v21.0.0/sdk/barcodescanner'
       },
       {
         name: 'BlurView',
-        href: '/docs/v21.0.0/sdk/blurview'
+        href: '/versions/v21.0.0/sdk/blurview'
       },
       {
         name: 'Branch',
-        href: '/docs/v21.0.0/sdk/branch'
+        href: '/versions/v21.0.0/sdk/branch'
       },
       {
         name: 'Camera',
-        href: '/docs/v21.0.0/sdk/camera'
+        href: '/versions/v21.0.0/sdk/camera'
       },
       {
         name: 'Constants',
-        href: '/docs/v21.0.0/sdk/constants'
+        href: '/versions/v21.0.0/sdk/constants'
       },
       {
         name: 'Contacts',
-        href: '/docs/v21.0.0/sdk/contacts'
+        href: '/versions/v21.0.0/sdk/contacts'
       },
       {
         name: 'DocumentPicker',
-        href: '/docs/v21.0.0/sdk/documentpicker'
+        href: '/versions/v21.0.0/sdk/documentpicker'
       },
       {
         name: 'ErrorRecovery',
-        href: '/docs/v21.0.0/sdk/errorrecovery'
+        href: '/versions/v21.0.0/sdk/errorrecovery'
       },
       {
         name: 'Facebook',
-        href: '/docs/v21.0.0/sdk/facebook'
+        href: '/versions/v21.0.0/sdk/facebook'
       },
       {
         name: 'FacebookAds',
-        href: '/docs/v21.0.0/sdk/facebookads'
+        href: '/versions/v21.0.0/sdk/facebookads'
       },
       {
         name: 'FileSystem',
-        href: '/docs/v21.0.0/sdk/filesystem'
+        href: '/versions/v21.0.0/sdk/filesystem'
       },
       {
         name: 'Fingerprint',
-        href: '/docs/v21.0.0/sdk/fingerprint'
+        href: '/versions/v21.0.0/sdk/fingerprint'
       },
       {
         name: 'Font',
-        href: '/docs/v21.0.0/sdk/font'
+        href: '/versions/v21.0.0/sdk/font'
       },
       {
         name: 'GLView',
-        href: '/docs/v21.0.0/sdk/glview'
+        href: '/versions/v21.0.0/sdk/glview'
       },
       {
         name: 'Google',
-        href: '/docs/v21.0.0/sdk/google'
+        href: '/versions/v21.0.0/sdk/google'
       },
       {
         name: 'Gyroscope',
-        href: '/docs/v21.0.0/sdk/gyroscope'
+        href: '/versions/v21.0.0/sdk/gyroscope'
       },
       {
         name: 'ImagePicker',
-        href: '/docs/v21.0.0/sdk/imagepicker'
+        href: '/versions/v21.0.0/sdk/imagepicker'
       },
       {
         name: 'IntentLauncherAndroid',
-        href: '/docs/v21.0.0/sdk/intent-launcher'
+        href: '/versions/v21.0.0/sdk/intent-launcher'
       },
       {
         name: 'KeepAwake',
-        href: '/docs/v21.0.0/sdk/keepawake'
+        href: '/versions/v21.0.0/sdk/keepawake'
       },
       {
         name: 'LinearGradient',
-        href: '/docs/v21.0.0/sdk/lineargradient'
+        href: '/versions/v21.0.0/sdk/lineargradient'
       },
       {
         name: 'Location',
-        href: '/docs/v21.0.0/sdk/location'
+        href: '/versions/v21.0.0/sdk/location'
       },
       {
         name: 'Lottie',
-        href: '/docs/v21.0.0/sdk/lottie'
+        href: '/versions/v21.0.0/sdk/lottie'
       },
       {
         name: 'Magnetometer',
-        href: '/docs/v21.0.0/sdk/magnetometer'
+        href: '/versions/v21.0.0/sdk/magnetometer'
       },
       {
         name: 'MapView',
-        href: '/docs/v21.0.0/sdk/mapview'
+        href: '/versions/v21.0.0/sdk/mapview'
       },
       {
         name: 'Notifications',
-        href: '/docs/v21.0.0/sdk/notifications'
+        href: '/versions/v21.0.0/sdk/notifications'
       },
       {
         name: 'Payments',
-        href: '/docs/v21.0.0/sdk/payments'
+        href: '/versions/v21.0.0/sdk/payments'
       },
       {
         name: 'Pedometer',
-        href: '/docs/v21.0.0/sdk/pedometer'
+        href: '/versions/v21.0.0/sdk/pedometer'
       },
       {
         name: 'Permissions',
-        href: '/docs/v21.0.0/sdk/permissions'
+        href: '/versions/v21.0.0/sdk/permissions'
       },
       {
         name: 'registerRootComponent',
-        href: '/docs/v21.0.0/sdk/registerrootcomponent'
+        href: '/versions/v21.0.0/sdk/registerrootcomponent'
       },
       {
         name: 'ScreenOrientation',
-        href: '/docs/v21.0.0/sdk/screen-orientation'
+        href: '/versions/v21.0.0/sdk/screen-orientation'
       },
       {
         name: 'SecureStore',
-        href: '/docs/v21.0.0/sdk/securestore'
+        href: '/versions/v21.0.0/sdk/securestore'
       },
       {
         name: 'Segment',
-        href: '/docs/v21.0.0/sdk/segment'
+        href: '/versions/v21.0.0/sdk/segment'
       },
       {
         name: 'Speech',
-        href: '/docs/v21.0.0/sdk/speech'
+        href: '/versions/v21.0.0/sdk/speech'
       },
       {
         name: 'SQLite',
-        href: '/docs/v21.0.0/sdk/sqlite'
+        href: '/versions/v21.0.0/sdk/sqlite'
       },
       {
         name: 'Svg',
-        href: '/docs/v21.0.0/sdk/svg'
+        href: '/versions/v21.0.0/sdk/svg'
       },
       {
         name: 'takeSnapshotAsync',
-        href: '/docs/v21.0.0/sdk/takeSnapshotAsync'
+        href: '/versions/v21.0.0/sdk/takeSnapshotAsync'
       },
       {
         name: 'Util',
-        href: '/docs/v21.0.0/sdk/util'
+        href: '/versions/v21.0.0/sdk/util'
       },
       {
         name: 'Video',
-        href: '/docs/v21.0.0/sdk/video'
+        href: '/versions/v21.0.0/sdk/video'
       },
       {
         name: 'WebBrowser',
-        href: '/docs/v21.0.0/sdk/webbrowser'
+        href: '/versions/v21.0.0/sdk/webbrowser'
       }
     ]
   }

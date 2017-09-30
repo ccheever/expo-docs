@@ -6,7 +6,7 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-import { LATEST_VERSION } from '~/data/versions'
+// const LATEST_VERSION = require('./data/versions').LATEST_VERSION;
 
 app.prepare().then(() => {
   createServer((req, res) => {
@@ -18,7 +18,7 @@ app.prepare().then(() => {
     // `latest` URLs should render the latest version
     const splitPath = pathname.split('/')
     if (splitPath[2] === 'latest') {
-      splitPath[2] = LATEST_VERSION
+      splitPath[2] = 'v21.0.0'
       app.render(req, res, splitPath.join('/'), query)
     } else {
       handle(req, res, parsedUrl)

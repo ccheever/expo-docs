@@ -25,12 +25,8 @@ class AlgoliaSearch extends React.Component {
   processUrl(url) {
     // Update URLs for new doc URLs
     var routes = url.split('/')
-    // Get rid of '/versions'
-    routes.splice(0, 2)
-    // Get rid of .html suffix
     routes[routes.length - 1] = routes[routes.length - 1].replace('.html', '')
-    // Add `docs` prefix
-    return '/docs/' + routes.join('/')
+    return routes.join('/')
   }
 
   componentDidMount() {
@@ -58,7 +54,11 @@ class AlgoliaSearch extends React.Component {
           asPath = this.processUrl(replaceVersionInUrl(route, 'latest'))
         }
         route = this.processUrl(route)
-        Router.push(route, asPath)
+        if (asPath) {
+          Router.push(route, asPath)
+        } else {
+          Router.push(route)
+        }
 
         document.getElementById('docsearch').blur()
         const searchbox = document.querySelector('input#docsearch')
