@@ -1,6 +1,8 @@
 import React from 'react'
 import PermalinkIcon from './permalink-icon'
 
+const slugs = require(`github-slugger`)()
+
 class Heading extends React.Component {
   render() {
     const { component, className, children, ...rest } = this.props
@@ -23,7 +25,7 @@ export default props => {
 
   if (null == id) {
     const text = 'string' === typeof children ? children : children.join('')
-    id = text.toLowerCase().replace(/\s/g, '-').replace(/[?!]/g, '')
+    id = slugs.slug(text)
   }
 
   const targetStyle = null != offsetTop
