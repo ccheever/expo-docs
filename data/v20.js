@@ -45,7 +45,7 @@ export default [
       },
       {
         name: 'Configuration with app.json',
-        href: '/versions/v20.0.0/guides/configuration-with-app-json'
+        href: '/versions/v20.0.0/guides/configuration'
       },
       {
         name: 'Development Mode',
@@ -53,11 +53,11 @@ export default [
       },
       {
         name: 'exp Command-Line Interface',
-        href: '/versions/v20.0.0/guides/command-line-interface'
+        href: '/versions/v20.0.0/guides/exp-cli'
       },
       {
         name: 'Viewing Logs',
-        href: '/versions/v20.0.0/guides/viewing-logs'
+        href: '/versions/v20.0.0/guides/logging'
       },
       {
         name: 'Debugging',
@@ -84,7 +84,7 @@ export default [
         posts: [
           {
             name: 'Detaching/Ejecting',
-            href: '/versions/v20.0.0/guides/detaching-with-expokit'
+            href: '/versions/v20.0.0/guides/detach'
           },
           {
             name: 'Advanced ExpoKit Topics',
@@ -112,13 +112,13 @@ export default [
         posts: [
           {
             name: 'Preloading & Caching Assets',
-            href: '/versions/v20.0.0/guides/preloading-caching-assets'
+            href: '/versions/v20.0.0/guides/preloading-and-caching-assets'
           }
         ]
       },
       {
         name: 'Error Handling',
-        href: '/versions/v20.0.0/guides/error-handling'
+        href: '/versions/v20.0.0/guides/errors'
       },
       {
         name: 'Icons',
@@ -126,15 +126,15 @@ export default [
       },
       {
         name: 'Using Custom Fonts',
-        href: '/versions/v20.0.0/guides/custom-fonts'
+        href: '/versions/v20.0.0/guides/using-custom-fonts'
       },
       {
         name: 'Configuring Status Bar',
-        href: '/versions/v20.0.0/guides/configuring-status-bar'
+        href: '/versions/v20.0.0/guides/configuring-statusbar'
       },
       {
         name: 'Routing & Navigation',
-        href: '/versions/v20.0.0/guides/routing-navigation'
+        href: '/versions/v20.0.0/guides/routing-and-navigation'
       },
       {
         name: 'Push Notifications',
@@ -142,23 +142,23 @@ export default [
       },
       {
         name: 'Using Modern JavaScript',
-        href: '/versions/v20.0.0/guides/modern-javascript'
+        href: '/versions/v20.0.0/guides/using-modern-javascript'
       },
       {
         name: 'Using ClojureScript',
-        href: '/versions/v20.0.0/guides/clojurescript'
+        href: '/versions/v20.0.0/guides/using-clojurescript'
       },
       {
         name: 'Using Firebase',
-        href: '/versions/v20.0.0/guides/firebase'
+        href: '/versions/v20.0.0/guides/using-firebase'
       },
       {
         name: 'Using GraphQL',
-        href: '/versions/v20.0.0/guides/graphql'
+        href: '/versions/v20.0.0/guides/using-graphql'
       },
       {
         name: 'Using Sentry',
-        href: '/versions/v20.0.0/guides/sentry'
+        href: '/versions/v20.0.0/guides/using-sentry'
       }
     ]
   },
@@ -168,7 +168,7 @@ export default [
     posts: [
       {
         name: 'Creating a 2D Game',
-        href: '/versions/v20.0.0/tutorials/creating-a-2d-game'
+        href: '/versions/v20.0.0/tutorials/create-floatyplane-game'
       }
     ]
   },
@@ -211,11 +211,11 @@ export default [
       },
       {
         name: 'BarCodeScanner',
-        href: '/versions/v20.0.0/sdk/barcodescanner'
+        href: '/versions/v20.0.0/sdk/bar-code-scanner'
       },
       {
         name: 'BlurView',
-        href: '/versions/v20.0.0/sdk/blurview'
+        href: '/versions/v20.0.0/sdk/blur-view'
       },
       {
         name: 'Branch',
@@ -235,11 +235,11 @@ export default [
       },
       {
         name: 'DocumentPicker',
-        href: '/versions/v20.0.0/sdk/documentpicker'
+        href: '/versions/v20.0.0/sdk/document-picker'
       },
       {
         name: 'ErrorRecovery',
-        href: '/versions/v20.0.0/sdk/errorrecovery'
+        href: '/versions/v20.0.0/sdk/error-recovery'
       },
       {
         name: 'Facebook',
@@ -247,7 +247,7 @@ export default [
       },
       {
         name: 'FacebookAds',
-        href: '/versions/v20.0.0/sdk/facebookads'
+        href: '/versions/v20.0.0/sdk/facebook-ads'
       },
       {
         name: 'FileSystem',
@@ -263,7 +263,7 @@ export default [
       },
       {
         name: 'GLView',
-        href: '/versions/v20.0.0/sdk/glview'
+        href: '/versions/v20.0.0/sdk/gl-view'
       },
       {
         name: 'Google',
@@ -283,11 +283,11 @@ export default [
       },
       {
         name: 'KeepAwake',
-        href: '/versions/v20.0.0/sdk/keepawake'
+        href: '/versions/v20.0.0/sdk/keep-awake'
       },
       {
         name: 'LinearGradient',
-        href: '/versions/v20.0.0/sdk/lineargradient'
+        href: '/versions/v20.0.0/sdk/linear-gradient'
       },
       {
         name: 'Location',
@@ -303,7 +303,7 @@ export default [
       },
       {
         name: 'MapView',
-        href: '/versions/v20.0.0/sdk/mapview'
+        href: '/versions/v20.0.0/sdk/map-view'
       },
       {
         name: 'Notifications',
@@ -323,7 +323,7 @@ export default [
       },
       {
         name: 'registerRootComponent',
-        href: '/versions/v20.0.0/sdk/registerrootcomponent'
+        href: '/versions/v20.0.0/sdk/register-root-component'
       },
       {
         name: 'ScreenOrientation',
@@ -351,7 +351,7 @@ export default [
       },
       {
         name: 'takeSnapshotAsync',
-        href: '/versions/v20.0.0/sdk/takeSnapshotAsync'
+        href: '/versions/v20.0.0/sdk/take-snapshot-async'
       },
       {
         name: 'Util',
