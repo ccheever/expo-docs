@@ -106,6 +106,7 @@
         "as-needed"
       ],
       "no-shadow": "error",
+      "no-console": 0,
       "import-b5a962/no-mutable-exports": "error",
       "import-b5a962/no-anonymous-default-export": [
         "error",
