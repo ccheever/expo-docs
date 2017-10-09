@@ -25,7 +25,16 @@ Then you can run the app with:
 yarn run dev
 ~~~
 
-Now the documentation is running at http://localhost:5800
+Now the documentation is running at http://localhost:3000
+
+### Running in production mode
+
+~~~sh
+yarn run build
+yarn run start 
+~~~
+
+
 
 ### Editing Docs Content
 
