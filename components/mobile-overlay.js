@@ -162,39 +162,18 @@ export default class DocsNavbarDesktop extends React.Component {
     }
     return (
       <div>
-        <div
-          className="desktop-sidebar"
-          style={{
-            paddingLeft: '20px',
-            paddingRight: '20px'
-          }}
-        >
+        <div className="desktop-sidebar">
           {this.props.mobile &&
-            <div
-              style={{
-                paddingTop: '5px',
-                paddingBottom: '10px',
-                borderBottom: '1px solid #ccc',
-                marginBottom: '1.45rem'
-              }}
-            >
-              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <VersionSelector
-                  activeVersion={this.props.activeVersion}
-                  setVersion={this.props.setVersion}
-                />
-                <Button
-                  onClick={this.props.toggleMobileOverlay}
-                  value="Close"
-                />
-              </div>
-              <div style={{ display: 'flex', width: '100%' }}>
-                <AlgoliaSearch
-                  style={{ width: '100%' }}
-                  router={this.props.router}
-                  activeVersion={this.props.activeVersion}
-                />
-              </div>
+            <div>
+              <Button onClick={this.props.toggleMobileOverlay} value="Close" />
+              <VersionSelector
+                activeVersion={this.props.activeVersion}
+                setVersion={this.props.setVersion}
+              />
+              <AlgoliaSearch
+                router={this.props.router}
+                activeVersion={this.props.activeVersion}
+              />
             </div>}
           {data.map(categoryInfo => this.renderCategory(categoryInfo))}
         </div>

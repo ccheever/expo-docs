@@ -85,8 +85,8 @@ class AlgoliaSearch extends React.Component {
 
   render() {
     return (
-      <div style={{ float: 'right' }}>
-        <div className="serach-container">
+      <div style={this.props.style}>
+        <div className="search-container">
           <input
             id="algolia-search-box"
             type="text"
@@ -96,14 +96,10 @@ class AlgoliaSearch extends React.Component {
             dir="auto"
           />
         </div>
-        {/* [presets.Tablet]: {
-        marginTop: `0px`,
-      }, 
-      ...scale(-1 / 5), */}
+
         <style jsx>
           {`
         .search-container {
-            float: right;
             marginTop: 12px;
         }
 

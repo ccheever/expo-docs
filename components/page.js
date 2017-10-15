@@ -65,6 +65,11 @@ class Page extends React.Component {
               height: 100%;
               background-color: ${darkBg ? '#000' : '#fff'};
               color: ${darkBg ? '#fff' : '#000'};
+              width: 100%;
+              height: 100%;
+              margin: 0px;
+              padding: 0px;
+              overflow: hidden;
             }
 
             a {
