@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
-import Logo from './logo'
-import AlgoliaSearch from './algolia-search'
+import Logo from './icons/logo'
+import AlgoliaSearch from './plugins/algolia-search'
 import VersionSelector from './version-selector'
 import Button from './button'
 

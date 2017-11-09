@@ -6,7 +6,7 @@ import { expoteam } from '~/data/team'
 // import { P } from "~/components/text/paragraph";
 // import Image from '~/components/image'
 import { Code } from '~/components/text/code'
-// import SnackEmbed from '~/components/snack-embed'
+// import SnackEmbed from '~/components/plugins/snack-embed'
 // import {
 //   TerminalInput,
 //   TerminalOutput

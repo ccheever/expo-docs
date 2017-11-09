@@ -11,7 +11,7 @@ import { InlineCode } from '~/components/text/code'
 //   TerminalOutput
 // } from "~/components/text/terminal";
 
-import SnackEmbed from '~/components/snack-embed'
+import SnackEmbed from '~/components/plugins/snack-embed'
 
 // prettier-ignore
 export default withDoc({

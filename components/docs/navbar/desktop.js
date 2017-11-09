@@ -10,7 +10,7 @@ import v21 from '~/data/v21'
 import { replaceVersionInUrl } from '~/components/utils/url'
 
 import Button from '~/components/button'
-import AlgoliaSearch from '~/components/algolia-search'
+import AlgoliaSearch from '~/components/plugins/algolia-search'
 import VersionSelector from '~/components/version-selector'
 
 export class NavLink extends React.Component {
