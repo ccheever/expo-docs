@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Router from 'next/router'
 import qs from 'query-string'
 import _ from 'lodash'
 
@@ -62,6 +63,17 @@ export class NavLink extends React.Component {
 }
 
 export default class DocsNavbarDesktop extends React.Component {
+  componentDidMount() {
+    // Maintain navbar scroll position when navigating
+    Router.onRouteChangeStart = () => {
+      window._expoSidebarScrollPosition = this.props.getSidebarScrollPosition()
+    }
+
+    Router.onRouteChangeComplete = () => {
+      this.props.setSidebarScrollPosition(window._expoSidebarScrollPosition)
+    }
+  }
+
   renderPost(info, level) {
     if (info.posts) {
       return this.renderCategory(info, level + 1)
