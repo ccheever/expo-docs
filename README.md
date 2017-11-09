@@ -1,6 +1,6 @@
 # Expo Documentation
 
-This is the public documentation for **Expo** its SDK and client and services.<br/>
+This is the public documentation for **Expo**, its SDK, client and services.<br/>
 
 You can access this documentation online at https://docs.expo.io/.
 
@@ -12,7 +12,7 @@ Download the copy of this repostory.
 git clone https://github.com/ccheever/expo-docs.git
 ~~~
 
-Then visit to the downloaded repository and install dependencies with:
+Then `cd` into the downloaded directory and install dependencies with:
 
 ~~~sh
 yarn install 
@@ -33,7 +33,6 @@ Now the documentation is running at http://localhost:3000
 yarn run build
 yarn run start 
 ~~~
-
 
 
 ### Editing Docs Content
