@@ -38,7 +38,13 @@ class Head extends React.PureComponent {
             href="/static/images/favicon-32x32.png"
             sizes="32x32"
           />
-
+          <link href="/static/prism/prism.css" rel="stylesheet" />
+          <link href="/static/prism/prism-coy.css" rel="stylesheet" />
+          <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"
+          />
+          <link href="/static/algolia/algolia.css" rel="stylesheet" />
           <meta name="theme-color" content="#000" />
           {this.props.children}
         </NextHead>

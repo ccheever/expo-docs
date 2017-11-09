@@ -1,33 +1,42 @@
 import { FONT_FAMILY_MONO } from '../css-config'
+import React from 'react'
 
-export const Code = ({ children }) => (
-  <pre
-    style={{
-      border: '1px solid #eaeaea',
-      padding: '16px',
-      margin: '0',
-      whiteSpace: 'pre',
-      overflowWrap: 'break-word',
-      overflow: 'auto',
-      WebkitOverflowScrolling: 'touch'
-    }}
-  >
-    <code className="language-js">
-      {children.trim()}
-      <style jsx>
-        {`
-        code {
-          color: #bd10e0;
-          font-family: ${FONT_FAMILY_MONO};
-          font-size: 12px;
-          line-height: 1rem;
-          margin-bottom: 2rem;
-        }
-      `}
-      </style>
-    </code>
-  </pre>
-)
+/* global Prism */
+
+export class Code extends React.Component {
+  componentDidMount() {
+    Prism.highlightAll()
+  }
+
+  render() {
+    return (
+      <pre
+        style={{
+          border: '1px solid #eaeaea',
+          padding: '20px',
+          margin: '40px 0',
+          whiteSpace: 'pre',
+          overflow: 'auto',
+          WebkitOverflowScrolling: 'touch'
+        }}
+      >
+        <code className="language-javascript">
+          {this.props.children}
+          <style jsx>
+            {`
+            code {
+              color: #bd10e0;
+              font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+              font-size: 13px;
+              line-height: 20px;
+            }
+          `}
+          </style>
+        </code>
+      </pre>
+    )
+  }
+}
 
 export const InlineCode = ({ children, noWrap }) => (
   <code className={noWrap && 'no-wrap'}>
