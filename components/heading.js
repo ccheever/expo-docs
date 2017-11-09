@@ -17,27 +17,24 @@ class Heading extends React.Component {
   }
 }
 
-export default props => {
-  const { offsetTop } = props
+const fn = props => {
   const component = props.children
   const children = component.props.children || ''
   let id = props.id
 
   if (null == id) {
     const text = 'string' === typeof children ? children : children.join('')
+    slugs.reset()
     id = slugs.slug(text)
   }
 
-  const targetStyle = null != offsetTop
-    ? { marginTop: -offsetTop + 'px', paddingTop: offsetTop + 'px' }
-    : null
   return (
     <Heading
       className={props.lean ? 'lean' : ''}
       component={component}
       data-components-heading
     >
-      <span id={id} className="target" style={targetStyle} />
+      <span id={id} className="target" />
       <a href={'#' + id}>{children}</a>
       <span className="permalink"><PermalinkIcon /></span>
       <style jsx>
@@ -78,10 +75,9 @@ export default props => {
 
         .target {
           display: block;
-          margin-top: -20px;
-          padding-top: 20px;
+          margin-top: -100px;
+          padding-bottom: 100px;
           visibility: hidden;
-          position: absolute;
         }
 
         .permalink {
@@ -98,3 +94,5 @@ export default props => {
     </Heading>
   )
 }
+
+export default fn
