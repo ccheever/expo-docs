@@ -5,15 +5,7 @@ export const UL = ({ children }) => (
       {`
       ul {
         padding: 0;
-        list-style-type: none;
         margin-left: 15px;
-      }
-      ul > :global(li::before) {
-        content: "-";
-        display: inline-block;
-        color: #999;
-        position: absolute;
-        margin-left: -15px;
       }
     `}
     </style>
@@ -42,7 +34,7 @@ export const LI = ({ children }) => (
       li {
         font-size: 1rem;
         line-height: 1.725rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.25rem;
       }
     `}
     </style>
