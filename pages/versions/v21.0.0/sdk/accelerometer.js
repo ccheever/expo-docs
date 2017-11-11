@@ -4,9 +4,9 @@ import withDoc, { components } from '~/lib/with-doc'
 import { expoteam } from '~/data/team'
 // import { InternalLink, ExternalLink } from "~/components/text/link";
 // import { P } from "~/components/text/paragraph";
-// import Image from '~/components/image'
+// import Image from '~/components/base/image'
 import SnackEmbed from '~/components/plugins/snack-embed'
-// import { Code } from '~/components/text/code'
+// import { Code } from '~/components/base/code'
 // import {
 //   TerminalInput,
 //   TerminalOutput

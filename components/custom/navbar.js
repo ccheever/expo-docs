@@ -1,16 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
+import Router from 'next/router'
 import qs from 'query-string'
 import _ from 'lodash'
 
 import v20 from '~/data/v20'
 import v21 from '~/data/v21'
 
-import { replaceVersionInUrl } from '~/components/utils/url'
+import { replaceVersionInUrl } from '~/lib/url'
 
-import Button from '~/components/button'
+import Button from '~/components/base/button'
 import AlgoliaSearch from '~/components/plugins/algolia-search'
-import VersionSelector from '~/components/version-selector'
+import VersionSelector from '~/components/custom/version-selector'
 
 export class NavLink extends React.Component {
   getCurrentHref() {
@@ -62,6 +63,17 @@ export class NavLink extends React.Component {
 }
 
 export default class DocsNavbarDesktop extends React.Component {
+  componentDidMount() {
+    // Maintain navbar scroll position when navigating
+    Router.onRouteChangeStart = () => {
+      window._expoSidebarScrollPosition = this.props.getSidebarScrollPosition()
+    }
+
+    Router.onRouteChangeComplete = () => {
+      this.props.setSidebarScrollPosition(window._expoSidebarScrollPosition)
+    }
+  }
+
   renderPost(info, level) {
     if (info.posts) {
       return this.renderCategory(info, level + 1)
@@ -162,18 +174,39 @@ export default class DocsNavbarDesktop extends React.Component {
     }
     return (
       <div>
-        <div className="desktop-sidebar">
+        <div
+          className="desktop-sidebar"
+          style={{
+            paddingLeft: '20px',
+            paddingRight: '20px'
+          }}
+        >
           {this.props.mobile &&
-            <div>
-              <Button onClick={this.props.toggleMobileOverlay} value="Close" />
-              <VersionSelector
-                activeVersion={this.props.activeVersion}
-                setVersion={this.props.setVersion}
-              />
-              <AlgoliaSearch
-                router={this.props.router}
-                activeVersion={this.props.activeVersion}
-              />
+            <div
+              style={{
+                paddingTop: '5px',
+                paddingBottom: '10px',
+                borderBottom: '1px solid #ccc',
+                marginBottom: '1.45rem'
+              }}
+            >
+              <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <VersionSelector
+                  activeVersion={this.props.activeVersion}
+                  setVersion={this.props.setVersion}
+                />
+                <Button
+                  onClick={this.props.toggleMobileOverlay}
+                  value="Close"
+                />
+              </div>
+              <div style={{ display: 'flex', width: '100%' }}>
+                <AlgoliaSearch
+                  style={{ width: '100%' }}
+                  router={this.props.router}
+                  activeVersion={this.props.activeVersion}
+                />
+              </div>
             </div>}
           {data.map(categoryInfo => this.renderCategory(categoryInfo))}
         </div>

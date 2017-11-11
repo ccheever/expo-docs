@@ -2,7 +2,7 @@ import markdown from 'markdown-in-js'
 import withDoc, { components } from '~/lib/with-doc'
 
 import { expoteam } from '~/data/team'
-import { InlineCode } from '~/components/text/code'
+import { InlineCode } from '~/components/base/code'
 
 // prettier-ignore
 export default withDoc({

@@ -1,11 +1,8 @@
 import React from 'react'
-// import presets from 'glamor-media-query-presets';
-
-// import { rhythm, scale } from '../utils/typography';
-import { replaceVersionInUrl } from '~/components/utils/url'
-import { LATEST_VERSION } from '~/data/versions'
-
 import Router from 'next/router'
+
+import { replaceVersionInUrl } from '~/lib/url'
+import { LATEST_VERSION } from '~/data/versions'
 
 class AlgoliaSearch extends React.Component {
   componentWillReceiveProps(nextProps) {

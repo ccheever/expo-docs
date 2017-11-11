@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-import Logo from './icons/logo'
-import AlgoliaSearch from './plugins/algolia-search'
-import VersionSelector from './version-selector'
-import Button from './button'
+import Logo from '~/components/icons/logo'
+import AlgoliaSearch from '~/components/plugins/algolia-search'
+import VersionSelector from '~/components/custom/version-selector'
+import Button from '~/components/base/button'
 
 class Header extends React.PureComponent {
   render() {

@@ -1,4 +1,4 @@
-import { FONT_FAMILY_SANS, FONT_FAMILY_SANS_BOLD } from '../css-config'
+import { FONT_FAMILY_SANS, FONT_FAMILY_SANS_BOLD } from '~/style/css-config'
 
 export const P = ({ children }) => (
   <p>

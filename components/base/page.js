@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import Head from 'next/head'
-import { FONT_FAMILY_SANS } from './css-config'
+import { FONT_FAMILY_SANS } from '~/style/css-config'
 
 class Page extends React.Component {
   getChildContext() {

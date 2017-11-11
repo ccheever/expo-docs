@@ -2,15 +2,8 @@ import markdown from 'markdown-in-js'
 import withDoc, { components } from '~/lib/with-doc'
 
 import { expoteam } from '~/data/team'
-// import { InternalLink, ExternalLink } from "~/components/text/link";
-// import { P } from "~/components/text/paragraph";
-// import Image from '~/components/image'
+import { Code } from '~/components/base/code'
 import SnackEmbed from '~/components/plugins/snack-embed'
-// import { Code } from '~/components/text/code'
-// import {
-//   TerminalInput,
-//   TerminalOutput
-// } from "~/components/text/terminal";
 
 // prettier-ignore
 export default withDoc({
@@ -18,6 +11,16 @@ export default withDoc({
   date: '30 Aug 2017',
   authors: [expoteam],
 })(markdown(components)`
+
+${
+    /*eslint-disable */
+    <Code>{`
+    /* @info Replace <strong>'YOUR_APP_ID'</strong> with your application id from <a href='https://developers.facebook.com' target='_blank'>developers.facebook.com</a> */
+    const FB_APP_ID = 'YOUR_APP_ID'; 
+    /* @end */
+    `}</Code>
+    /*eslint-enable */
+}
 
 Access the device accelerometer sensor(s) to respond to changes in
 acceleration in 3d space.

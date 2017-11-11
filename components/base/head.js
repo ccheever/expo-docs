@@ -3,7 +3,7 @@ import React from 'react'
 import NextHead from 'next/head'
 import NProgress from 'nprogress'
 import debounce from 'lodash.debounce'
-import RouterEvents from '../lib/router-events'
+import RouterEvents from '~/lib/router-events'
 
 const start = debounce(NProgress.start, 200)
 RouterEvents.on('routeChangeStart', start)
