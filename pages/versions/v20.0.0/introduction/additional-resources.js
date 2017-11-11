@@ -14,7 +14,7 @@ import { expoteam } from '~/data/team'
 // prettier-ignore
 export default withDoc({
   title: 'Additional Resources',
-  date: '30 Aug 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 The following resources are useful for learning Expo and some of the projects that it depends on.

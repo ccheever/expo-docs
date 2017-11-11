@@ -14,7 +14,7 @@ import { Code } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'KeepAwake',
-  date: '4 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 A React component that prevents the screen sleeping when rendered. It also exposes static methods to control the behavior imperatively.

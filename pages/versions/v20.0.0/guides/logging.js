@@ -14,7 +14,7 @@ import Image from '~/components/base/image'
 // prettier-ignore
 export default withDoc({
   title: 'Viewing Logs',
-  date: '30 Aug 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

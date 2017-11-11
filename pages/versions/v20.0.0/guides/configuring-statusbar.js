@@ -15,7 +15,6 @@ import SnackEmbed from '~/components/plugins/snack-embed'
 // prettier-ignore
 export default withDoc({
   title: 'Configuring StatusBar',
-  date: '30 Aug 2017',
   authors: [expoteam],
 })(markdown(components)`
 

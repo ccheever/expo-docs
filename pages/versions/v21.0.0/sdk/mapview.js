@@ -15,7 +15,7 @@ import SnackEmbed from '~/components/plugins/snack-embed'
 // prettier-ignore
 export default withDoc({
   title: 'MapView',
-  date: '4 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

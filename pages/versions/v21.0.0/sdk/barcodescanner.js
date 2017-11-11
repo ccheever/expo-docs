@@ -14,7 +14,7 @@ import { Code } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'BarCodeScanner',
-  date: '5 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 A React component that renders a viewfinder for the device's either front or back camera viewfinder and will detect bar codes that show up in the frame.

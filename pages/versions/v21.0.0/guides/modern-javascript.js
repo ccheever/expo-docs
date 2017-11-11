@@ -15,7 +15,7 @@ import JSFeaturesTable from '~/components/js-features-table'
 // prettier-ignore
 export default withDoc({
   title: 'Using Modern JavaScript',
-  date: '30 Aug 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

@@ -14,7 +14,7 @@ import { expoteam } from '~/data/team'
 // prettier-ignore
 export default withDoc({
   title: 'takeSnapshotAsync',
-  date: '2 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

@@ -7,7 +7,6 @@ import { InlineCode } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'Assets',
-  date: '30 Aug 2017',
   authors: [expoteam],
 })(markdown(components)`
 

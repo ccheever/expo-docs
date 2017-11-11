@@ -15,7 +15,7 @@ import { Code } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'Gyroscope',
-  date: '4 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

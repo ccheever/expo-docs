@@ -14,7 +14,7 @@ import { Code } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: ' Using Firebase',
-  date: '30 Aug 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

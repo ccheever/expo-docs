@@ -14,7 +14,7 @@ import { Code } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'Troubleshooting Proxies',
-  date: '30 Aug 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 ## Mac OS Proxy Configuration (Sierra)

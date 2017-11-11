@@ -15,7 +15,7 @@ import SnackEmbed from '~/components/plugins/snack-embed'
 // prettier-ignore
 export default withDoc({
   title: 'BlurView',
-  date: '5 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

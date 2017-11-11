@@ -16,7 +16,7 @@ import Image from '~/components/base/image'
 // prettier-ignore
 export default withDoc({
   title: 'GLView',
-  date: '4 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

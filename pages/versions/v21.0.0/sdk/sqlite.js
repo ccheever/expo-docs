@@ -14,7 +14,7 @@ import { Code } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'SQLite',
-  date: '2 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

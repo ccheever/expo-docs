@@ -14,7 +14,7 @@ import { Code } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'Camera',
-  date: '5 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

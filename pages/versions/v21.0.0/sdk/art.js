@@ -15,7 +15,7 @@ import { expoteam } from '~/data/team'
 // prettier-ignore
 export default withDoc({
   title: 'ART',
-  date: '30 Aug 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

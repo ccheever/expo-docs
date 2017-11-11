@@ -14,7 +14,7 @@ import { InlineCode } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'DocumentPicker',
-  date: '5 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 

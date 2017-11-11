@@ -14,7 +14,7 @@ import { Code, InlineCode } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'AV',
-  date: '5 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 The [\`Expo.Audio.Sound\`](audio.html) objects and [\`Expo.Video\`](video.html) components share a unified imperative API for media playback.

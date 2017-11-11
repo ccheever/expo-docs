@@ -14,7 +14,7 @@ import { Code } from '~/components/base/code'
 // prettier-ignore
 export default withDoc({
   title: 'Intent Launcher (Android)',
-  date: '4 Sep 2017',
+  
   authors: [expoteam],
 })(markdown(components)`
 Provides a way to launch android intents. e.g. - opening a specific settings screen.
