@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
+// import debounce from 'lodash.debounce'
 import qs from 'query-string'
 import _ from 'lodash'
 
@@ -64,13 +65,26 @@ export class NavLink extends React.Component {
 
 export default class DocsNavbarDesktop extends React.Component {
   componentDidMount() {
+    // const start = debounce(window.NProgress.start, 200);
+
     // Maintain navbar scroll position when navigating
     Router.onRouteChangeStart = () => {
       window._expoSidebarScrollPosition = this.props.getSidebarScrollPosition()
+      // console.log('started');
+      // start();
+      window.NProgress.start()
     }
 
     Router.onRouteChangeComplete = () => {
       this.props.setSidebarScrollPosition(window._expoSidebarScrollPosition)
+      // start.cancel();
+      // console.log('complete');
+      window.NProgress.done()
+    }
+
+    Router.onRouteChangeError = () => {
+      // start.cancel();
+      window.NProgress.done()
     }
   }
 

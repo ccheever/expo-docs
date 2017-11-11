@@ -1,27 +1,12 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import NextHead from 'next/head'
-import NProgress from 'nprogress'
-import debounce from 'lodash.debounce'
-import RouterEvents from '~/lib/router-events'
-
-const start = debounce(NProgress.start, 200)
-RouterEvents.on('routeChangeStart', start)
-RouterEvents.on('routeChangeComplete', () => {
-  start.cancel()
-  NProgress.done()
-})
-RouterEvents.on('routeChangeError', () => {
-  start.cancel()
-  NProgress.done()
-})
 
 class Head extends React.PureComponent {
   render() {
     const titlePrefix = null != this.props.titlePrefix
       ? this.props.titlePrefix
       : 'ZEIT – '
-    const { darkBg } = this.context
     return (
       <div>
         <NextHead>
@@ -45,6 +30,12 @@ class Head extends React.PureComponent {
             href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"
           />
           <link href="/static/algolia/algolia.css" rel="stylesheet" />
+
+          <script src="http://ricostacruz.com/nprogress/nprogress.js" />
+          <link
+            href="http://ricostacruz.com/nprogress/nprogress.css"
+            rel="stylesheet"
+          />
           <meta name="theme-color" content="#000" />
           {this.props.children}
         </NextHead>
@@ -76,11 +67,11 @@ class Head extends React.PureComponent {
           <style>
             {`
             #nprogress .bar {
-              background: ${darkBg ? '#fff' : '#000'};
+              background: '#000'};
             }
 
             #nprogress .peg {
-              box-shadow: ${darkBg ? '0 0 10px #fff, 0 0 5px #fff' : '0 0 10px #ccc, 0 0 5px #ccc'};
+              box-shadow: '0 0 10px #ccc, 0 0 5px #ccc'};
             }
           `}
           </style>
