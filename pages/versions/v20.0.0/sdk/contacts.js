@@ -2,15 +2,7 @@ import markdown from 'markdown-in-js'
 import withDoc, { components } from '~/lib/with-doc'
 
 import { expoteam } from '~/data/team'
-// import { InternalLink, ExternalLink } from "~/components/text/link";
-// import { P } from "~/components/text/paragraph";
-// import Image from '~/components/base/image'
 import { Code, InlineCode } from '~/components/base/code'
-// import {
-//   TerminalInput,
-//   TerminalOutput
-// } from "~/components/text/terminal";
-//25, 47, 74, 107, 111, 115, 119, 123, 127, 131, 135, 141, 145
 // prettier-ignore
 export default withDoc({
   title: 'Contacts',

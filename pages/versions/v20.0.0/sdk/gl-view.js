@@ -2,21 +2,13 @@ import markdown from 'markdown-in-js'
 import withDoc, { components } from '~/lib/with-doc'
 
 import { expoteam } from '~/data/team'
-// import { InternalLink, ExternalLink } from "~/components/text/link";
-// import { P } from "~/components/text/paragraph";
 import Image from '~/components/base/image'
-// import { Code, InlineCode } from '~/components/base/code'
-// import {
-//   TerminalInput,
-//   TerminalOutput
-// } from "~/components/text/terminal";
 
-// gif not loading
+// TODO: gif not loading
 
 // prettier-ignore
 export default withDoc({
   title: 'GLView',
-  
   authors: [expoteam],
 })(markdown(components)`
 

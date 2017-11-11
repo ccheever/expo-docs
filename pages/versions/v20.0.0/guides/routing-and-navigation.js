@@ -8,7 +8,6 @@ import SnackEmbed from '~/components/plugins/snack-embed'
 // prettier-ignore
 export default withDoc({
   title: 'Routing & Navigation',
-  
   authors: [expoteam],
 })(markdown(components)`
 

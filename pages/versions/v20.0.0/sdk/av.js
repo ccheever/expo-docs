@@ -2,19 +2,11 @@ import markdown from 'markdown-in-js'
 import withDoc, { components } from '~/lib/with-doc'
 
 import { expoteam } from '~/data/team'
-// import { InternalLink, ExternalLink } from "~/components/text/link";
-// import { P } from "~/components/text/paragraph";
-// import Image from '~/components/base/image'
 import { Code, InlineCode } from '~/components/base/code'
-// import {
-//   TerminalInput,
-//   TerminalOutput
-// } from "~/components/text/terminal";
 
 // prettier-ignore
 export default withDoc({
   title: 'AV',
-  
   authors: [expoteam],
 })(markdown(components)`
 The [\`Expo.Audio.Sound\`](audio.html) objects and [\`Expo.Video\`](video.html) components share a unified imperative API for media playback.

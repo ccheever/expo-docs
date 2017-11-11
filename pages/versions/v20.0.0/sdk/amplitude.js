@@ -2,20 +2,10 @@ import markdown from 'markdown-in-js'
 import withDoc, { components } from '~/lib/with-doc'
 
 import { expoteam } from '~/data/team'
-// import { InternalLink, ExternalLink } from "~/components/text/link";
-// import { P } from "~/components/text/paragraph";
-// import Image from '~/components/base/image'
-// import SnackEmbed from '~/components/plugins/snack-embed'
-// import { Code } from '~/components/base/code'
-// import {
-//   TerminalInput,
-//   TerminalOutput
-// } from "~/components/text/terminal";
 
 // prettier-ignore
 export default withDoc({
   title: 'Amplitude',
-  
   authors: [expoteam],
 })(markdown(components)`
 
