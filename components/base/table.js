@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types'
-// Packages
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Table = ({ children }) => (
   <table cellSpacing="0" cellPadding="5">
