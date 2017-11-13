@@ -9,3 +9,4 @@ export const FONT_FAMILY_MONO =
 
 export const COLOR_ERROR = '#FF001F'
 export const COLOR_SUCCESS = '#067DF7'
+export const COLOR_SELECTION = '#BEBEBE'
