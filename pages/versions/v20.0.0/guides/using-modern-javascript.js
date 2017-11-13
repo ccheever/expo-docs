@@ -2,7 +2,7 @@ import markdown from 'markdown-in-js'
 import withDoc, { components } from '~/lib/with-doc'
 
 import { expoteam } from '~/data/team'
-import JSFeaturesTable from '~/components/js-features-table'
+import JSFeaturesTable from '~/components/plugins/js-features-table'
 
 // prettier-ignore
 export default withDoc({
