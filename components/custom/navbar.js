@@ -63,7 +63,7 @@ export class NavLink extends React.Component {
   }
 }
 
-export default class DocsNavbarDesktop extends React.Component {
+export default class Navbar extends React.Component {
   componentDidMount() {
     // const start = debounce(window.NProgress.start, 200);
 
