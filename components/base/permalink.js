@@ -23,7 +23,15 @@ const fn = props => {
   let id = props.id
 
   if (null == id) {
-    const text = 'string' === typeof children ? children : children.join('')
+    let text = children
+    if (typeof children === 'string') {
+      text = children
+    } else if (typeof children === 'object') {
+      text = children.toString()
+    } else {
+      text = children[0].toString()
+    }
+
     slugs.reset()
     id = slugs.slug(text)
   }
