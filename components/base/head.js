@@ -13,30 +13,24 @@ class Head extends React.PureComponent {
           <title>{titlePrefix + this.props.title}</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <link
-            rel="icon"
-            type="image/png"
-            href="/static/images/favicon-32x32.png"
-            sizes="32x32"
-          />
-          <link href="/static/prism/prism.css" rel="stylesheet" />
-          <link href="/static/prism/prism-coy.css" rel="stylesheet" />
-          <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"
-          />
-          <link href="/static/algolia/algolia.css" rel="stylesheet" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+          <link rel="icon" type="image/png" href="/static/images/favicon-32x32.png" sizes="32x32"/>
 
-          <script src="http://ricostacruz.com/nprogress/nprogress.js" />
-          <link
-            href="http://ricostacruz.com/nprogress/nprogress.css"
-            rel="stylesheet"
-          />
-          <meta name="theme-color" content="#000" />
+          <link href="/static/libs/prism/prism.css" rel="stylesheet" />
+          <link href="/static/libs/prism/prism-coy.css" rel="stylesheet" />
+          <script src="/static/libs/prism/prism.js" />
+
+          <link href="/static/libs/tippy/tippy-1.2.0.css" rel="stylesheet" />
+          <script src="/static/libs/tippy/tippy-1.2.0.min.js" />
+
+          <link href="/static/libs/tippy/tippy-1.2.0.css" rel="stylesheet" />
+
+          <link href="/static/libs/algolia/algolia.min.css" rel="stylesheet"/>
+          <link href="/static/libs/algolia/algolia-mobile.css" rel="stylesheet" />
+
+          <link href="/static/libs/nprogress/nprogress.css" rel="stylesheet"/>
+          <script src="/static/libs/nprogress/nprogress.js" />
+
           {this.props.children}
         </NextHead>
         <style jsx global>

@@ -50,12 +50,6 @@ class DocsPage extends React.Component {
           {version === 'unversioned' &&
             <meta name="robots" content="noindex" />}
           <link rel="canonical" href={canonicalUrl} />
-          <script src="/static/prism/prism.js" />
-          <link
-            rel="stylesheet"
-            href="https://unpkg.com/tippy.js@1.2.0/dist/tippy.css"
-          />
-          <script src="https://unpkg.com/tippy.js@1.2.0/dist/tippy.min.js" />
         </Head>
         <div
           className="header"
