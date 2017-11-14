@@ -21,6 +21,7 @@ class DocsPage extends React.Component {
     if (!version || VERSIONS.indexOf(version) === -1) {
       version = VERSIONS[0]
     }
+    this.version = version
 
     const setVersion = version_ => {
       if (NEW_DOC_VERSIONS.indexOf(version_) !== -1) {
