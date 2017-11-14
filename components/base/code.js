@@ -27,9 +27,9 @@ export class Code extends React.Component {
   render() {
     let code = this.props.children
     let html = Prism.highlight(code.toString(), Prism.languages.javascript)
-    //console.log(html);
+    console.log(process.browser, html)
     html = this._replaceCommentsWithAnnotations(html)
-    //console.log(html);
+    console.log(process.browser, html)
 
     return (
       <pre

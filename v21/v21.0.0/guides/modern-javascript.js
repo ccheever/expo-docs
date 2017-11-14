@@ -10,7 +10,7 @@ import { expoteam } from '~/data/team'
 //   TerminalInput,
 //   TerminalOutput
 // } from "~/components/text/terminal";
-import JSFeaturesTable from '~/components/js-features-table'
+import JSFeaturesTable from '~/components/plugins/js-features-table'
 
 // prettier-ignore
 export default withDoc({
