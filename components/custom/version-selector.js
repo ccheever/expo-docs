@@ -24,13 +24,10 @@ class VersionSelector extends React.Component {
             style={{
               marginLeft: '4px',
               background: `none`,
-              borderRadius: 0,
               cursor: `pointer`,
-              outline: `none`,
               fontSize: `100%`,
-              // backgroundColor: '#f7f7f7',
-              // borderColor: '#ccc',
-              border: 'none',
+              backgroundColor: '#f7f7f7',
+              borderColor: '#ccc',
               textAlignLast: `center`,
               textAlign: `center`
             }}
@@ -47,6 +44,24 @@ class VersionSelector extends React.Component {
               })
               .reverse()}
           </select>
+          <style jsx>
+            {`
+
+            select {
+              border-radius: 0;
+              border: 'none';
+              outline: 'none';
+            }
+
+              @media screen and (min-width: 950px) {
+                select {
+                  border-radius: 0;
+                  border: 'none';
+                  outline: 'none';
+                }
+              }
+            `}
+          </style>
         </div>
       </div>
     )

@@ -96,16 +96,19 @@ class AlgoliaSearch extends React.Component {
 
         <style jsx>
           {`
-        .search-container {
-            marginTop: 12px;
-        }
+
+          @media screen and (max-width: 950px) {
+            .search-container {
+                margin-top: 12px;
+            }
+          }
 
         #algolia-search-box {
             border: '1px solid #eee';
-            borderRadius: 3;
-            fontSize: '14px';
+            border-radius: 3;
+            font-size: '14px';
             padding: '2px 10px';
-            marginTop: '2px';
+            margin-top: '2px';
         }
         `}
         </style>
